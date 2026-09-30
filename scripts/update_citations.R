@@ -75,7 +75,7 @@ main <- function() {
     fetch_pages(list(filter = paste0('fulltext.search:', term)))), recursive = FALSE),
     error = function(e) {
       search_error <<- conditionMessage(e)
-      if (file.exists('data/candidate-cache.json')) fromJSON('data/candidate-cache.json', simplifyVector=FALSE) else list()
+      if (file.exists('data/openalex/candidate-cache.json')) fromJSON('data/openalex/candidate-cache.json', simplifyVector=FALSE) else list()
     })
   if (!is.null(search_error)) {
     warning('Mention search unavailable; retaining cached candidates. ', search_error)
@@ -110,29 +110,18 @@ main <- function() {
   ord <- order(-rows$year, rows$id); rows <- rows[ord, , drop = FALSE]; works <- works[ord]
   accepted <- rows$status != 'candidate'
   # All requests must finish before any output is replaced.
-  if (is.null(search_error)) write_changed('data/candidate-cache.json', toJSON(candidates, pretty=TRUE, auto_unbox=TRUE, null='null'))
-  search_status <- if (is.null(search_error)) 'complete' else if (file.exists('data/candidate-cache.json')) 'unavailable_cached_results' else 'unavailable_no_results'
-  write_changed('data/status.json', toJSON(list(citation_lookup='complete', mention_search=search_status), pretty=TRUE, auto_unbox=TRUE))
+  if (is.null(search_error)) write_changed('data/openalex/candidate-cache.json', toJSON(candidates, pretty=TRUE, auto_unbox=TRUE, null='null'))
+  search_status <- if (is.null(search_error)) 'complete' else if (file.exists('data/openalex/candidate-cache.json')) 'unavailable_cached_results' else 'unavailable_no_results'
+  write_changed('data/openalex/status.json', toJSON(list(citation_lookup='complete', mention_search=search_status), pretty=TRUE, auto_unbox=TRUE))
   for (name in c('citations', 'candidates')) {
     keep <- if (name == 'citations') accepted else !accepted
     tmp <- tempfile(); write.csv(rows[keep, , drop=FALSE], tmp, row.names=FALSE, na='', fileEncoding='UTF-8')
-    write_changed(paste0('data/', name, '.csv'), readLines(tmp, encoding='UTF-8')); unlink(tmp)
+    write_changed(paste0('data/openalex/', name, '.csv'), readLines(tmp, encoding='UTF-8')); unlink(tmp)
   }
-  write_changed('data/records.json', toJSON(rows, pretty=TRUE, auto_unbox=TRUE))
+  write_changed('data/openalex/records.json', toJSON(rows, pretty=TRUE, auto_unbox=TRUE))
   bib <- vapply(lapply(works[accepted], work_to_bibtex), `[[`, '', 'text')
-  write_changed('data/citations.bib', c('% gfwr citations linked by OpenAlex or verified manually. See data/records.json.', paste(bib, collapse='\n\n')))
-  write_changed('data/sources.json', toJSON(list(dois=dois, openalex_ids=ids, not_indexed=missing), pretty=TRUE, auto_unbox=FALSE))
-  render_list <- function(keep) {
-    if (!any(keep)) return('<p>No hay registros en esta categoría.</p>')
-    paste0('<ol>', paste(vapply(which(keep), function(i) paste0('<li><a href="', html(rows$url[i]), '">', html(rows$title[i]), '</a> (', rows$year[i], ')<br><small>', html(rows$authors[i]), ' · ', html(rows$status[i]), '</small></li>'), ''), collapse='\n'), '</ol>')
-  }
-  write_changed('docs/index.html', c('<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Publicaciones · gfwr</title>',
-    '<style>body{font:18px/1.6 system-ui;max-width:960px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}a{color:#006b79}li{margin-bottom:18px}small{color:#485b65}</style><main><h1>Publicaciones y menciones de gfwr</h1>',
-    '<p>Actualización mensual desde OpenAlex y Zenodo. Cobertura parcial: una mención no demuestra una cita al paquete. Las citas enlazadas reflejan el índice de OpenAlex y pueden requerir revisión.</p>',
-    if (!is.null(search_error)) '<p><strong>Búsqueda de menciones pendiente:</strong> OpenAlex no pudo completar la búsqueda de texto. Se conservan resultados anteriores, si existen. El número de candidatos no representa una búsqueda actual completa. Configurar OPENALEX_API_KEY o reintentar más tarde.</p>' else '<p>Búsqueda de menciones completada en la última actualización de datos.</p>',
-    '<p><a href="https://github.com/cornejotux/gfwr-citations/tree/main/data">Descargar CSV, JSON y BibTeX</a> · <a href="https://github.com/cornejotux/gfwr-citations/actions">Ver última ejecución</a></p>',
-    paste0('<h2>Citas enlazadas o verificadas (', sum(accepted), ')</h2>'), render_list(accepted),
-    paste0('<h2>Menciones candidatas por revisar (', sum(!accepted), ')</h2>'), render_list(!accepted), '</main></html>'))
+  write_changed('data/openalex/citations.bib', c('% gfwr citations linked by OpenAlex or verified manually. See data/openalex/records.json.', paste(bib, collapse='\n\n')))
+  write_changed('data/openalex/sources.json', toJSON(list(dois=dois, openalex_ids=ids, not_indexed=missing), pretty=TRUE, auto_unbox=FALSE))
   message('Saved ', sum(accepted), ' citations and ', sum(!accepted), ' candidates')
 }
 if (sys.nframe() == 0) main()

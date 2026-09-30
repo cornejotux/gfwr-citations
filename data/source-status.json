@@ -1,0 +1,26 @@
+{
+  "GitHub": {
+    "description": "Búsqueda automática mensual de referencias al paquete en código.",
+    "error": null,
+    "last_successful_check": "2026-09-30",
+    "mode": "automatic",
+    "status": "complete"
+  },
+  "Google Scholar": {
+    "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
+    "last_successful_check": "2026-09-30",
+    "mode": "manual",
+    "status": "manual_review"
+  },
+  "OpenAlex": {
+    "description": "Citas por DOI actualizadas; búsqueda de menciones pendiente, se conserva la caché.",
+    "mode": "automatic",
+    "status": "unavailable_cached_results"
+  },
+  "ResearchGate": {
+    "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
+    "last_successful_check": "2026-09-30",
+    "mode": "manual",
+    "status": "manual_review"
+  }
+}

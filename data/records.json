@@ -1,202 +1,559 @@
 [
   {
-    "id": "W7163045458",
-    "year": 2026,
-    "title": "Assessing Loggerhead Turtle Exposure to Fisheries in Northwest Africa: Predicted Risk and Management Gaps",
-    "authors": "Amy Isabelle Bowler; Annette Cameron Broderick; Michael S. Coyne; Matthew H. Godfrey; Brendan John Godley; Pedro López‐Suárez; Nuria Varo‐Cruz; Lucy A. Hawkes",
-    "doi": "10.1002/ece3.73729",
-    "url": "https://doi.org/10.1002/ece3.73729",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
-    "id": "W7163153779",
-    "year": 2026,
-    "title": "3D Diel Utilization Distribution: a novel perspective to understand marine turtle-fishery interaction",
     "authors": "Javier Menéndez‐Blázquez; Jessica Ruff; Ricardo Sagarminaga; Brendan John Godley; David March",
     "doi": "10.21203/rs.3.rs-9874630/v1",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7163153779"
+      }
+    ],
+    "id": "W7163153779",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "3D Diel Utilization Distribution: a novel perspective to understand marine turtle-fishery interaction",
     "url": "https://doi.org/10.21203/rs.3.rs-9874630/v1",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "year": 2026
   },
   {
-    "id": "W7164481520",
-    "year": 2026,
-    "title": "DecarbonyT - R script",
-    "authors": "Tommaso Russo; Maria Silvia Labriola; Antonello Sala",
-    "doi": "10.5281/zenodo.20651409",
-    "url": "https://doi.org/10.5281/zenodo.20651409",
+    "authors": "Amy Isabelle Bowler; Annette Cameron Broderick; Michael S. Coyne; Matthew H. Godfrey; Brendan John Godley; Pedro López‐Suárez; Nuria Varo‐Cruz; Lucy A. Hawkes",
+    "doi": "10.1002/ece3.73729",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7163045458"
+      }
+    ],
+    "id": "W7163045458",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Assessing Loggerhead Turtle Exposure to Fisheries in Northwest Africa: Predicted Risk and Management Gaps",
+    "url": "https://doi.org/10.1002/ece3.73729",
+    "year": 2026
   },
   {
-    "id": "W7167845424",
-    "year": 2026,
-    "title": "Desafiando la tragedia de los comunes",
-    "authors": "Juan Cruz Changazo",
-    "doi": "10.64928/mzq2jg63",
-    "url": "https://doi.org/10.64928/mzq2jg63",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
-    "id": "W7171427980",
-    "year": 2026,
-    "title": "CO2 release from bottom trawling disturbance and its relevance for seabed management",
-    "authors": "Manon Ducasse-Allegret; Simon F. Thrush; Ines Bartl",
-    "doi": "10.1016/j.ocecoaman.2026.108305",
-    "url": "https://doi.org/10.1016/j.ocecoaman.2026.108305",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
-    "id": "W7172266242",
-    "year": 2026,
-    "title": "Baseline characterization of inshore reef soundscapes and noise dynamics along the southeast coast of South Africa",
     "authors": "Kuhle Hlati; Tzu-Hao Lin; Fannie W. Shabangu; Jaco D. J. J. Versfeld; Tarron Lamont; Tamara B. Robinson; Stephen P. Kirkman",
     "doi": "10.1038/s41598-026-64663-w",
-    "url": "https://doi.org/10.1038/s41598-026-64663-w",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7172266242"
+      }
+    ],
+    "id": "W7172266242",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Baseline characterization of inshore reef soundscapes and noise dynamics along the southeast coast of South Africa",
+    "url": "https://doi.org/10.1038/s41598-026-64663-w",
+    "year": 2026
   },
   {
-    "id": "W7203795120",
-    "year": 2026,
-    "title": "Residency and Space Use of Endangered Smoothhound Sharks ( Mustelus mustelus ) in Relation to Marine Protection and Demersal Longline Fishing Along South Africa's South Coast",
+    "authors": "Manon Ducasse-Allegret; Simon F. Thrush; Ines Bartl",
+    "doi": "10.1016/j.ocecoaman.2026.108305",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7171427980"
+      }
+    ],
+    "id": "W7171427980",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "CO2 release from bottom trawling disturbance and its relevance for seabed management",
+    "url": "https://doi.org/10.1016/j.ocecoaman.2026.108305",
+    "year": 2026
+  },
+  {
+    "authors": "Tommaso Russo; Maria Silvia Labriola; Antonello Sala",
+    "doi": "10.5281/zenodo.20651409",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7164481520"
+      }
+    ],
+    "id": "W7164481520",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "DecarbonyT - R script",
+    "url": "https://doi.org/10.5281/zenodo.20651409",
+    "year": 2026
+  },
+  {
+    "authors": "Juan Cruz Changazo",
+    "doi": "10.64928/mzq2jg63",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7167845424"
+      }
+    ],
+    "id": "W7167845424",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Desafiando la tragedia de los comunes",
+    "url": "https://doi.org/10.64928/mzq2jg63",
+    "year": 2026
+  },
+  {
+    "authors": "Wenyi Li; Yining Chen; Xiong Zhang",
+    "doi": "10.1111/ddi.70167",
+    "evidence": [
+      {
+        "method": "manual_review",
+        "note": "La bibliografía del texto en ResearchGate cita Sánchez-Tapia et al. (2026), gfwr versión 3.0, y enlaza el repositorio del paquete.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/ddi.70167",
+        "source": "ResearchGate",
+        "type": "verified_citation",
+        "url": "https://www.researchgate.net/publication/403118614_Integrating_Local_Ecological_Knowledge_and_Fishing_Effort_Data_to_Inform_Bycatch_Management_of_Threatened_Marine_Fauna_in_Small-Scale_Fisheries"
+      },
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en Google Scholar; la evidencia de la cita está documentada por separado en ResearchGate.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/ddi.70167",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "external:10.1111/ddi.70167",
+    "sources": [
+      "Google Scholar",
+      "ResearchGate"
+    ],
+    "status": "verified_manually",
+    "title": "Integrating Local Ecological Knowledge and Fishing Effort Data to Inform Bycatch Management of Threatened Marine Fauna in Small-Scale Fisheries",
+    "url": "https://doi.org/10.1111/ddi.70167",
+    "year": "2026"
+  },
+  {
+    "authors": "G Li; C Feng; Y Shi; K Jiang; S Yang",
+    "doi": "10.3390/fishes11050270",
+    "evidence": [
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en Google Scholar; el extracto menciona gfwr. Pendiente de revisar el artículo completo.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://www.mdpi.com/2410-3888/11/5/270",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "external:10.3390/fishes11050270",
+    "sources": [
+      "Google Scholar"
+    ],
+    "status": "candidate",
+    "title": "Prediction of Fishing Effort Intensity and Identification of Key Environmental Factors in Northwest Pacific Squid Fishing Grounds Using a Multi-Mechanism Integrate 3DCNN Model",
+    "url": "https://www.mdpi.com/2410-3888/11/5/270",
+    "year": "2026"
+  },
+  {
     "authors": "Eugin Bornman; Taryn S. Murray; Neil Hammerschlag; Enrico Gennari",
     "doi": "10.1111/fme.70100",
-    "url": "https://doi.org/10.1111/fme.70100",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7203795120"
+      },
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en la primera página de Google Scholar. La aparición en la búsqueda no verifica una cita; los metadatos bibliográficos se conservan de OpenAlex.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/fme.70100",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "W7203795120",
+    "sources": [
+      "Google Scholar",
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Residency and Space Use of Endangered Smoothhound Sharks ( Mustelus mustelus ) in Relation to Marine Protection and Demersal Longline Fishing Along South Africa's South Coast",
+    "url": "https://doi.org/10.1111/fme.70100",
+    "year": 2026
   },
   {
-    "id": "W7203976387",
-    "year": 2026,
-    "title": "oceandatr : An R Package to Acquire and Process Geospatial Ocean Data",
     "authors": "Jason Flower; Echelle S. Burns; Daniel C. Dunn; Andy Estep; Jason D. Everett; Jeffrey O. Hanson; Sarah E. Lester; Anthony James Richardson",
     "doi": "10.1002/ece3.74211",
-    "url": "https://doi.org/10.1002/ece3.74211",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7203976387"
+      }
+    ],
+    "id": "W7203976387",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "oceandatr : An R Package to Acquire and Process Geospatial Ocean Data",
+    "url": "https://doi.org/10.1002/ece3.74211",
+    "year": 2026
   },
   {
-    "id": "W4408763936",
-    "year": 2025,
-    "title": "Bias in Global Fishing Watch AIS data analyses results in overestimate of Northeast Atlantic pelagic fishing impact",
     "authors": "Niels T. Hintzen; Katie Brigden; Hendrik-Jan Kaastra; Steven Mackinson; Martin A. Pastoors; Lennert van de Pol",
     "doi": "10.1093/icesjms/fsaf033",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4408763936"
+      },
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en la primera página de Google Scholar. La aparición en la búsqueda no verifica una cita; los metadatos bibliográficos se conservan de OpenAlex.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1093/icesjms/fsaf033",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "W4408763936",
+    "sources": [
+      "Google Scholar",
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Bias in Global Fishing Watch AIS data analyses results in overestimate of Northeast Atlantic pelagic fishing impact",
     "url": "https://doi.org/10.1093/icesjms/fsaf033",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "year": 2025
   },
   {
-    "id": "W4413918986",
-    "year": 2025,
-    "title": "Relative benthic status guides sustainable trawl management in the Adriatic–Ionian Seas",
-    "authors": "Walter Zupa; Pierluigi Carbonara; Isabella Bitetto; Michele Casini; Porzia Maiorano; Gianfranco D’Onghia; Igor Isajlović; María Teresa Spedicato; Gert Van Hoey; Anna Rindorf",
-    "doi": "10.1093/icesjms/fsaf148",
-    "url": "https://doi.org/10.1093/icesjms/fsaf148",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "authors": "Fannie W. Shabangu; Trevor A. Branch; Kuhle Hlati; Flore Samaran; Imtiyaaz Malick; Sean T. Fennessy; Bernadine I. Everett; Marcel A. van den Berg; Dawit Yemane",
+    "doi": "10.1016/j.rsma.2025.104141",
+    "evidence": [
+      {
+        "method": "manual_review",
+        "note": "Sección 2.3 y referencias: uso de gfwr y cita de Clavelle et al. (2024), comprobados en el texto disponible en ResearchGate.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1016/j.rsma.2025.104141",
+        "source": "ResearchGate",
+        "type": "verified_citation",
+        "url": "https://www.researchgate.net/publication/389968129_Contraventions_of_MPA_regulations_by_the_South_African_demersal_trawl_fisheries_Evidence_from_loss_and_damage_of_scientific_instruments"
+      }
+    ],
+    "id": "external:10.1016/j.rsma.2025.104141",
+    "sources": [
+      "ResearchGate"
+    ],
+    "status": "verified_manually",
+    "title": "Contraventions of MPA regulations by the South African demersal trawl fisheries: Evidence from loss and damage of scientific instruments",
+    "url": "https://doi.org/10.1016/j.rsma.2025.104141",
+    "year": "2025"
   },
   {
-    "id": "W4414511595",
-    "year": 2025,
-    "title": "Short- and Medium-Term Predictions of Spatiotemporal Distribution of Marine Fishing Efforts Using Deep Learning",
-    "authors": "Shenglong Yang; Wei Wang; Tianfei Cheng; Shengmao Zhang; Yang Dai; Fei Wang; Heng Zhang; Yongchuang Shi; Weifeng Zhou; Wei Fan",
-    "doi": "10.3390/fishes10100479",
-    "url": "https://doi.org/10.3390/fishes10100479",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
-    "id": "W4416268110",
-    "year": 2025,
-    "title": "Spatial overlap alone downplays the level of interaction between a central place forager and the local fishery",
-    "authors": "Jacqueline S Glencross; Andrew J. Glencross; Jennifer L. Grigg; Stephen D. J. Lang; Azwianewi Benedict Makhado; Leshia Upfold; Debbie J. F. Russell; Andrew S. Brierley; Richard B. Sherley",
-    "doi": "10.1111/1365-2664.70199",
-    "url": "https://doi.org/10.1111/1365-2664.70199",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
-    "id": "W4417290932",
-    "year": 2025,
-    "title": "Estimating non‐US longline fishing impacts on Hawai‘i pelagic false killer whales in a transboundary assessment area",
     "authors": "Robert Ahrens; Amanda L. Bradford; Erin M. Oleson; Emily Crigler; T. Todd Jones",
     "doi": "10.1111/csp2.70216",
-    "url": "https://doi.org/10.1111/csp2.70216",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4417290932"
+      },
+      {
+        "method": "manual_review",
+        "note": "Referencia al paquete comprobada en el artículo.",
+        "source": "Publisher",
+        "type": "verified_citation",
+        "url": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/csp2.70216"
+      },
+      {
+        "method": "manual_review",
+        "note": "El texto público consultado incluye la referencia bibliográfica al paquete; mismo artículo previamente verificado en la editorial.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/csp2.70216",
+        "source": "ResearchGate",
+        "type": "verified_citation",
+        "url": "https://www.researchgate.net/publication/398641018_Estimating_non-US_longline_fishing_impacts_on_Hawai%27i_pelagic_false_killer_whales_in_a_transboundary_assessment_area"
+      },
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en la primera página de Google Scholar. La aparición en la búsqueda no verifica una cita; los metadatos bibliográficos se conservan de OpenAlex.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/csp2.70216",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "W4417290932",
+    "sources": [
+      "Google Scholar",
+      "OpenAlex",
+      "Publisher",
+      "ResearchGate"
+    ],
     "status": "verified_manually",
-    "evidence": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/csp2.70216"
+    "title": "Estimating non‐US longline fishing impacts on Hawai‘i pelagic false killer whales in a transboundary assessment area",
+    "url": "https://doi.org/10.1111/csp2.70216",
+    "year": 2025
   },
   {
-    "id": "W7117298794",
-    "year": 2025,
-    "title": "Isolation and molecular diagnosis of Heterorhabditis indica from soil and its efficiency of inducing resistance against root-knot nematodes on eggplant",
     "authors": "Saad Tareq Abdul Malek; Sarah Tareq Hasan; Khalid M Al-Juhaishi",
     "doi": "10.65395/252.730812",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7117298794"
+      }
+    ],
+    "id": "W7117298794",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Isolation and molecular diagnosis of Heterorhabditis indica from soil and its efficiency of inducing resistance against root-knot nematodes on eggplant",
     "url": "https://doi.org/10.65395/252.730812",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "year": 2025
   },
   {
-    "id": "W4394930372",
-    "year": 2024,
-    "title": "Fine-scale behaviour and population estimates suggest low exposure but do not exclude high sensitivity to bycatch for Endangered sooty albatrosses",
-    "authors": "Aymeric Fromant; Julien Collet; Cécile Vansteenberghe; Raphaël Musseau; Dominique P. Filippi; Karine Delord; Christophe Barbraud",
-    "doi": "10.1101/2024.04.14.589402",
-    "url": "https://doi.org/10.1101/2024.04.14.589402",
+    "authors": "Walter Zupa; Pierluigi Carbonara; Isabella Bitetto; Michele Casini; Porzia Maiorano; Gianfranco D’Onghia; Igor Isajlović; María Teresa Spedicato; Gert Van Hoey; Anna Rindorf",
+    "doi": "10.1093/icesjms/fsaf148",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4413918986"
+      }
+    ],
+    "id": "W4413918986",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Relative benthic status guides sustainable trawl management in the Adriatic–Ionian Seas",
+    "url": "https://doi.org/10.1093/icesjms/fsaf148",
+    "year": 2025
   },
   {
-    "id": "W4402977695",
-    "year": 2024,
-    "title": "Using the Conventional Method to Estimate Water Saturation of Khasib Formation in East Baghdad Oil Field Central Area",
-    "authors": "Noor F. Hameed; Rwaida K. AbdulMajeed",
-    "doi": "10.46717/igj.57.2c.8ms-2024-9-16",
-    "url": "https://doi.org/10.46717/igj.57.2c.8ms-2024-9-16",
+    "authors": "Shenglong Yang; Wei Wang; Tianfei Cheng; Shengmao Zhang; Yang Dai; Fei Wang; Heng Zhang; Yongchuang Shi; Weifeng Zhou; Wei Fan",
+    "doi": "10.3390/fishes10100479",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4414511595"
+      }
+    ],
+    "id": "W4414511595",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Short- and Medium-Term Predictions of Spatiotemporal Distribution of Marine Fishing Efforts Using Deep Learning",
+    "url": "https://doi.org/10.3390/fishes10100479",
+    "year": 2025
   },
   {
-    "id": "W4403157670",
-    "year": 2024,
-    "title": "Fine-scale behaviour and population estimates of endangered sooty albatross suggest low exposure (while not excluding high sensitivity) to bycatch",
+    "authors": "Jacqueline S Glencross; Andrew J. Glencross; Jennifer L. Grigg; Stephen D. J. Lang; Azwianewi Benedict Makhado; Leshia Upfold; Debbie J. F. Russell; Andrew S. Brierley; Richard B. Sherley",
+    "doi": "10.1111/1365-2664.70199",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4416268110"
+      },
+      {
+        "method": "manual_review",
+        "note": "Resultado observado en la primera página de Google Scholar. La aparición en la búsqueda no verifica una cita; los metadatos bibliográficos se conservan de OpenAlex.",
+        "observed_at": "2026-09-30",
+        "result_url": "https://doi.org/10.1111/1365-2664.70199",
+        "source": "Google Scholar",
+        "type": "discovery",
+        "url": "https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22"
+      }
+    ],
+    "id": "W4416268110",
+    "sources": [
+      "Google Scholar",
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Spatial overlap alone downplays the level of interaction between a central place forager and the local fishery",
+    "url": "https://doi.org/10.1111/1365-2664.70199",
+    "year": 2025
+  },
+  {
     "authors": "Aymeric Fromant; Julien Collet; Cécile Vansteenberghe; Raphaël Musseau; Dominique P. Filippi; Karine Delord; Christophe Barbraud",
     "doi": "10.3354/meps14719",
-    "url": "https://doi.org/10.3354/meps14719",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4403157670"
+      }
+    ],
+    "id": "W4403157670",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Fine-scale behaviour and population estimates of endangered sooty albatross suggest low exposure (while not excluding high sensitivity) to bycatch",
+    "url": "https://doi.org/10.3354/meps14719",
+    "year": 2024
   },
   {
-    "id": "W4376634211",
-    "year": 2023,
-    "title": "Estimating hidden fishing activity hotspots from vessel transmitted data",
+    "authors": "Aymeric Fromant; Julien Collet; Cécile Vansteenberghe; Raphaël Musseau; Dominique P. Filippi; Karine Delord; Christophe Barbraud",
+    "doi": "10.1101/2024.04.14.589402",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4394930372"
+      }
+    ],
+    "id": "W4394930372",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Fine-scale behaviour and population estimates suggest low exposure but do not exclude high sensitivity to bycatch for Endangered sooty albatrosses",
+    "url": "https://doi.org/10.1101/2024.04.14.589402",
+    "year": 2024
+  },
+  {
+    "authors": "Noor F. Hameed; Rwaida K. AbdulMajeed",
+    "doi": "10.46717/igj.57.2c.8ms-2024-9-16",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4402977695"
+      }
+    ],
+    "id": "W4402977695",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Using the Conventional Method to Estimate Water Saturation of Khasib Formation in East Baghdad Oil Field Central Area",
+    "url": "https://doi.org/10.46717/igj.57.2c.8ms-2024-9-16",
+    "year": 2024
+  },
+  {
     "authors": "Gianpaolo Coro; Lorenzo Sana; Carmen Ferrà; Pasquale Bove; Giuseppe Scarcella",
     "doi": "10.3389/fsufs.2023.1152226",
-    "url": "https://doi.org/10.3389/fsufs.2023.1152226",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4376634211"
+      }
+    ],
+    "id": "W4376634211",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Estimating hidden fishing activity hotspots from vessel transmitted data",
+    "url": "https://doi.org/10.3389/fsufs.2023.1152226",
+    "year": 2023
   },
   {
-    "id": "W4293217510",
-    "year": 2022,
-    "title": "Análisis Bibliométrico de publicaciones relacionadas con Planificación Estratégica y calidad educativa en el periodo 2000 – 2021",
     "authors": "Sophía Bethzabel Galárraga-Tobar; Ruth Matovelle-Villamar; Jesús Merino Velásquez; Wayky Luy-Navarrete",
     "doi": "10.33386/593dp.2022.4-1.1263",
-    "url": "https://doi.org/10.33386/593dp.2022.4-1.1263",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4293217510"
+      }
+    ],
+    "id": "W4293217510",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Análisis Bibliométrico de publicaciones relacionadas con Planificación Estratégica y calidad educativa en el periodo 2000 – 2021",
+    "url": "https://doi.org/10.33386/593dp.2022.4-1.1263",
+    "year": 2022
   },
   {
-    "id": "W4309780586",
-    "year": 2022,
-    "title": "Improving glass‐fiber epoxy composites via interlayer toughening with polyacrylonitrile/multiwalled carbon nanotubes electrospun fibers",
     "authors": "Christian Narváez‐Muñoz; Camilo Zamora‐Ledezma; Pavel  B. Ryzhakov; Jordi Pons‐Prats; Jeevithan Elango; Carlos Mena-Arciniega; Freddy Navarrete; Víctor Morales‐Flórez; Rafael Cano‐Crespo; Luis Javier Segura",
     "doi": "10.1002/app.53400",
-    "url": "https://doi.org/10.1002/app.53400",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W4309780586"
+      }
+    ],
+    "id": "W4309780586",
+    "sources": [
+      "OpenAlex"
+    ],
     "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "title": "Improving glass‐fiber epoxy composites via interlayer toughening with polyacrylonitrile/multiwalled carbon nanotubes electrospun fibers",
+    "url": "https://doi.org/10.1002/app.53400",
+    "year": 2022
   }
 ]

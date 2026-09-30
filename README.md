@@ -1,73 +1,89 @@
 # gfwr-citations
 
-Listado actualizable de publicaciones que citan o mencionan el paquete R [gfwr](https://github.com/GlobalFishingWatch/gfwr), inspirado en [NCEAS/codyn](https://github.com/NCEAS/codyn/blob/main/.github/workflows/update-citations.yaml).
+**[Ver publicaciones y repositorios](https://cornejotux.github.io/gfwr-citations/)** · [Ejecuciones](https://github.com/cornejotux/gfwr-citations/actions)
 
-**[Consultar el sitio](https://cornejotux.github.io/gfwr-citations/)** · **[Estado de las actualizaciones](https://github.com/cornejotux/gfwr-citations/actions/workflows/update-citations.yml)**
+Rastreador de citas, menciones y referencias de código al paquete [gfwr](https://github.com/GlobalFishingWatch/gfwr). Basado en el diseño de [codyn](https://github.com/NCEAS/codyn/blob/main/.github/workflows/update-citations.yaml), con varias fuentes y procedencia por registro.
 
-## Cómo funciona
+## Fuentes y nivel de automatización
 
-1. Consulta Zenodo para descubrir el DOI conceptual y todas las versiones del paquete (incluidas versiones nuevas).
-2. Resuelve esos DOI en OpenAlex y descarga las publicaciones que los citan, con paginación completa.
-3. Busca `gfwr` en el texto indexado por OpenAlex para detectar menciones adicionales.
-4. Separa citas enlazadas, citas verificadas manualmente y candidatos pendientes. Excluye las versiones del propio paquete; deduplica por ID y DOI, sin fusionar artículos solo por su título.
-5. Actualiza los archivos y el sitio. GitHub conserva el historial; solo se genera un commit cuando cambian los resultados.
+| Fuente | Qué aporta | Cómo se actualiza |
+| --- | --- | --- |
+| OpenAlex | Citas a los DOI del paquete y posibles menciones en texto | API, mensualmente |
+| Zenodo | DOI conceptual y DOI de todas las versiones de gfwr | API, mensualmente; es fuente de identificadores, no de publicaciones citantes |
+| GitHub | Importaciones, llamadas y enlaces al paquete en archivos R, Rmd y Quarto | API de búsqueda de código, mensualmente |
+| Google Scholar | Descubrimiento de publicaciones adicionales | Consulta revisada e importación de registros; **manual** |
+| ResearchGate | Publicaciones y evidencia en los textos disponibles | Consulta revisada e importación de registros; **manual** |
 
-El workflow corre el **día 1 de cada mes a las 06:00 UTC**, permite ejecución manual desde Actions → Update gfwr citations → Run workflow y se ejecuta cuando cambia código o configuración. La publicación de Pages ocurre dentro del mismo workflow; no requiere el bot privado de NCEAS ni un token personal.
+No se presenta un enlace a una búsqueda como si fuera una cita verificada. La primera consulta de Scholar y ResearchGate se realizó el 30 de septiembre de 2026; cubre una selección revisada, no toda la plataforma. Los registros conservan su fecha original hasta que se revisan de nuevo.
+
+Google Scholar [no ofrece acceso masivo](https://scholar.google.com/intl/en/scholar/help.html). No se implementa scraping desatendido ni se promete una API pública de ResearchGate. El workflow combina los registros importados de estas fuentes, pero **no descubre automáticamente nuevos resultados en Scholar o ResearchGate**.
+
+## Procedencia y tipos de evidencia
+
+Cada publicación contiene `sources` y una lista `evidence`. Cada evidencia conserva la plataforma, el enlace consultado, el método, una nota y, para las revisiones manuales, `observed_at`. Si aparece en varias fuentes, se conserva un solo registro por DOI y se agregan todas sus evidencias. Sin DOI se usa el ID estable; no se fusionan títulos similares automáticamente. Una fuente de descubrimiento no se convierte en prueba de una cita.
+
+- `verified_manually`: referencia al paquete comprobada en el texto o bibliografía.
+- `citation_linked_openalex`: OpenAlex enlaza una referencia a un DOI del paquete; puede requerir revisión.
+- `candidate`: resultado pendiente de revisión; no cuenta como cita.
+- Repositorios: se cuentan **por separado**, una vez por repositorio. `code_reference` indica una referencia de código, no demuestra que se ejecutó correctamente.
+
+La búsqueda de GitHub tiene cobertura parcial: archivos indexados de la rama predeterminada, extensiones configuradas y límites de la API. Se excluyen registros privados, forks identificados, el paquete original y este rastreador. No se publican fragmentos de código: se guardan enlaces, rutas y SHA de los blobs para revisar la evidencia. Los ejemplos y tutoriales pueden aparecer junto a proyectos de investigación.
 
 ## Archivos
 
 | Archivo | Contenido |
 | --- | --- |
-| `data/citations.csv` | Citas enlazadas por OpenAlex o verificadas manualmente |
-| `data/candidates.csv` | Resultados de búsqueda que necesitan revisión |
-| `data/citations.bib` | Bibliografía de las citas enlazadas/verificadas |
-| `data/records.json` | Todos los registros, estado y evidencia |
-| `data/sources.json` | DOI consultados, IDs y DOI aún no indexados |
-| `data/status.json` | Estado de las consultas de citas y menciones |
-| `data/candidate-cache.json` | Última búsqueda completa de candidatos, cuando existe |
-| `docs/index.html` | Página estática que publica GitHub Pages |
-| `config/sources.yml` | Fuentes y decisiones de revisión |
+| `data/records.json` | Publicaciones unificadas y todas sus evidencias |
+| `data/citations.csv` | Citas verificadas o enlazadas |
+| `data/candidates.csv` | Publicaciones por revisar |
+| `data/citations.bib` | BibTeX mínimo del listado unificado de citas |
+| `data/repositories.csv`, `data/repositories.json` | Repositorios y archivos con evidencia |
+| `data/source-status.json` | Estado y modalidad de actualización por fuente |
+| `data/github-cache.json` | Última búsqueda completa de GitHub y fecha |
+| `data/openalex/` | Resultados y caché originales de OpenAlex; incluye BibTeX con metadatos detallados |
+| `config/external-publications.csv` | Registros revisados de Scholar y ResearchGate |
+| `config/sources.yml` | DOI, filtros y revisiones de OpenAlex |
+| `docs/index.html` | Sitio publicado en GitHub Pages |
 
-`citation_linked_openalex` significa que OpenAlex registra una referencia a un DOI del paquete; no implica revisión humana. `verified_manually` identifica una comprobación documentada. `candidate` nunca se cuenta como cita confirmada.
+## Agregar registros de Scholar o ResearchGate
 
-## Revisar resultados
+1. Buscar `"gfwr" "fishing"` en [Google Scholar](https://scholar.google.com/scholar?q=%22gfwr%22+%22fishing%22) o `gfwr` en [ResearchGate](https://www.researchgate.net/search/publication?q=gfwr).
+2. Revisar el artículo y descartar homónimos: GFWR también es una sigla en otras disciplinas.
+3. Agregar una fila a `config/external-publications.csv` desde GitHub o localmente. Usar un editor CSV que respete comillas cuando un campo contiene comas.
+4. Conservar `source` (`Google Scholar` o `ResearchGate`), `source_url` de esa plataforma, `url` del artículo, DOI, título, autores, año, `observed_at` (AAAA-MM-DD), `method: manual_review`, `status` y `note` con el lugar donde se observó la referencia.
+5. Usar `candidate` si solo se observó un resultado; usar `verified_manually` solo después de comprobar la cita. Para la misma publicación en varias plataformas, agregar una fila por fuente con el mismo DOI.
+6. Guardar en `main`: el workflow incorporará las filas y actualizará el sitio. Nunca atribuir a Scholar un registro que solo se consultó en OpenAlex.
 
-Abrir el texto del candidato y comprobar la referencia al paquete. Agregar su ID y el enlace de evidencia en `confirmed_works`, por ejemplo:
+Para registros sin DOI, usar un ID único estable (por ejemplo `scholar:identificador-del-registro`). No usar el número total de resultados de Scholar como recuento de citas de gfwr. Para retirar un registro externo, quitar su fila; si también aparece en OpenAlex, excluirlo en `config/sources.yml`.
 
-```yaml
-confirmed_works:
-  W1234567890: https://publisher.example/article
-```
+## Ejecución automática
 
-El ID y enlace anteriores son ilustrativos. Para descartar falsos positivos, agregar los IDs reales a `exclude_works`. Guardar cambios en `main` dispara la actualización. La confirmación manual se vuelve a consultar aunque el registro deje de aparecer en las búsquedas.
+Día **1 de cada mes a las 06:00 UTC**, ejecución manual desde Actions y ejecución al modificar scripts, configuración, pruebas o workflow. GitHub conserva los cambios de datos; el despliegue de Pages ocurre en el mismo workflow.
+
+Las fuentes automáticas fallan de manera independiente. Una búsqueda incompleta de GitHub conserva la última búsqueda completa. Si OpenAlex falla, se mantienen sus archivos previos y se actualizan las otras fuentes. El sitio y `data/source-status.json` muestran el estado, para no confundir datos anteriores con búsquedas completas actuales.
+
+### Secretos y permisos
+
+- `OPENALEX_API_KEY`: opcional, recomendable para evitar restricciones de búsquedas anónimas; [acceso de OpenAlex](https://help.openalex.org/api/authentication/).
+- GitHub utiliza el `GITHUB_TOKEN` del workflow. Si el entorno no permite buscar código público con ese token, configurar `GITHUB_SEARCH_TOKEN` con un token compatible de acceso mínimo para lectura de código público. No introducir tokens en archivos ni en issues. Los fallos quedan visibles y conservan la caché.
+- No se requieren credenciales de Google Scholar, ResearchGate ni Global Fishing Watch.
+- GitHub Pages debe usar **GitHub Actions** como fuente. El workflow necesita escritura de contenidos para guardar resultados. Si se protege `main`, adaptar la escritura a un PR o bot autorizado.
+- GitHub puede desactivar las ejecuciones programadas de repositorios públicos tras 60 días sin actividad. Revisar [sus condiciones de programación](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) y Actions si no hay ejecuciones recientes.
 
 ## Ejecutar localmente
 
-Desde la raíz del repositorio, con R instalado:
-
-```r
-install.packages(c("httr2", "jsonlite", "yaml"))
-```
+R, Python 3.9+ y los paquetes R `httr2`, `jsonlite`, `yaml`:
 
 ```sh
+Rscript -e 'install.packages(c("httr2", "jsonlite", "yaml"))'
 Rscript tests/test.R
+python3 -m unittest discover -s tests -p 'test_*.py'
 Rscript scripts/update_citations.R
+python3 scripts/update_sources.py
 ```
 
-Opcional: configurar el secreto `OPENALEX_API_KEY` en Settings → Secrets and variables → Actions para ampliar el presupuesto de consultas. La clave se envía por encabezado y no se guarda en los archivos. Consultar las [condiciones actuales de acceso de OpenAlex](https://help.openalex.org/api/authentication/). No hace falta un token de la API de Global Fishing Watch.
+Configurar `GH_TOKEN` mediante el gestor de secretos del entorno para la búsqueda de código; sin token se conserva la caché. El script R genera exclusivamente la etapa OpenAlex. El script Python combina todas las fuentes, consulta GitHub y genera el sitio y las exportaciones finales.
 
-## Configuración en GitHub
+## Créditos y alcance
 
-- GitHub Pages: Settings → Pages → Source: **GitHub Actions**.
-- El workflow necesita escritura de contenidos para guardar los archivos. Si se protege `main`, adaptar el guardado a un PR o autorizar un bot; no desactivar protecciones existentes indiscriminadamente.
-- GitHub puede desactivar workflows programados de repositorios públicos tras 60 días sin actividad. Revisar Actions si no hay ejecuciones recientes; la programación depende del servicio y puede demorarse. [Documentación](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
-
-## Alcance y mantenimiento
-
-OpenAlex no indexa todas las referencias ni el texto completo de todas las publicaciones. Las referencias mediante URL o sin DOI pueden quedar fuera; las búsquedas de texto pueden producir falsos positivos. No es un recuento exhaustivo de todas las citas a gfwr. Los DOI no indexados quedan registrados y se reintentan en cada ejecución. Si falla Zenodo o la consulta de citas por DOI, la ejecución se detiene antes de sustituir los archivos. Si solo falla la búsqueda de menciones, las citas se actualizan, se conservan los candidatos anteriores y se publica una advertencia visible en el sitio, en Actions y en `data/status.json`. Sin caché previo, cero candidatos significa búsqueda pendiente, no ausencia de menciones. Un registro retirado por OpenAlex puede desaparecer del listado, pero permanece en el historial Git.
-
-El sitio enlaza a Actions para consultar la fecha de la última ejecución, sin modificar archivos solo para cambiar una fecha. CSV, JSON y BibTeX son salidas generadas: editar las decisiones en la configuración.
-
-## Créditos
-
-El formateador BibTeX se adaptó del script de codyn, cuyo diseño de DOI → OpenAlex → GitHub Actions sirve de base. Ver `NOTICE` y `LICENSE` (Apache 2.0). El rastreo de versiones, separación de candidatos, exportaciones y sitio se implementaron para gfwr.
+El formateador BibTeX y el diseño inicial DOI → OpenAlex → Actions se adaptaron de NCEAS/codyn. Ver `NOTICE` y `LICENSE` (Apache 2.0). La cobertura no es exhaustiva; los resultados pueden contener errores de las fuentes. Preprints y artículos con DOI diferentes se mantienen separados hasta revisión. No se redistribuyen artículos completos.

@@ -2,3 +2,5 @@
 .RData
 .Renviron
 .DS_Store
+__pycache__/
+*.pyc
