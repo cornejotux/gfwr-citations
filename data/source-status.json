@@ -1,25 +1,25 @@
 {
   "GitHub": {
-    "description": "Búsqueda automática mensual de referencias al paquete en código.",
-    "error": null,
+    "description": "Search unavailable; previous results retained. Check Actions and the GITHUB_SEARCH_TOKEN.",
+    "error": "GitHub token unavailable",
     "last_successful_check": "2026-09-30",
     "mode": "automatic",
-    "readme_search": null,
-    "status": "complete"
+    "readme_search": "unavailable_cached_results",
+    "status": "unavailable_cached_results"
   },
   "Google Scholar": {
-    "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
+    "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
     "last_successful_check": "2026-09-30",
     "mode": "manual",
     "status": "manual_review"
   },
   "OpenAlex": {
-    "description": "Consulta automática mensual; búsqueda de menciones completa.",
+    "description": "Monthly automatic query; mention search completed.",
     "mode": "automatic",
     "status": "complete"
   },
   "ResearchGate": {
-    "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
+    "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
     "last_successful_check": "2026-09-30",
     "mode": "manual",
     "status": "manual_review"
