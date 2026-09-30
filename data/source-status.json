@@ -1,11 +1,11 @@
 {
   "GitHub": {
-    "description": "Search unavailable; previous results retained. Check Actions and the GITHUB_SEARCH_TOKEN.",
-    "error": "GitHub token unavailable",
+    "description": "Monthly automatic search for package references in code.",
+    "error": null,
     "last_successful_check": "2026-09-30",
     "mode": "automatic",
-    "readme_search": "unavailable_cached_results",
-    "status": "unavailable_cached_results"
+    "readme_search": null,
+    "status": "complete"
   },
   "Google Scholar": {
     "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
@@ -14,9 +14,9 @@
     "status": "manual_review"
   },
   "OpenAlex": {
-    "description": "Monthly automatic query; mention search completed.",
+    "description": "DOI citations updated; mention search pending, cached results retained.",
     "mode": "automatic",
-    "status": "complete"
+    "status": "unavailable_cached_results"
   },
   "ResearchGate": {
     "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
