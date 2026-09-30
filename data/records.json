@@ -126,8 +126,8 @@
     "authors": "Robert Ahrens; Amanda L. Bradford; Erin M. Oleson; Emily Crigler; T. Todd Jones",
     "doi": "10.1111/csp2.70216",
     "url": "https://doi.org/10.1111/csp2.70216",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
+    "status": "verified_manually",
+    "evidence": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/csp2.70216"
   },
   {
     "id": "W7117298794",
