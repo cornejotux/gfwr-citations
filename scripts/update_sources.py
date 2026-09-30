@@ -218,28 +218,28 @@ def bibtex(rows):
 
 def render(publications, repos, statuses):
     h = html.escape
-    labels = {'candidate': 'Por revisar', 'verified_manually': 'Cita verificada', 'citation_linked_openalex': 'Cita enlazada por OpenAlex'}
+    labels = {'candidate': 'Needs review', 'verified_manually': 'Manually verified citation', 'citation_linked_openalex': 'OpenAlex-linked citation'}
     def evidence_list(r):
-        return '<details><summary>Fuentes y evidencia</summary><ul>' + ''.join(
+        return '<details><summary>Sources and evidence</summary><ul>' + ''.join(
             f'<li><a href="{h(e["url"], quote=True)}">{h(e["source"])}</a> · {h(e["method"])}'
             + (f' · {h(e["observed_at"])}' if e.get('observed_at') else '')
             + f'<br>{h(e["note"])}</li>' for e in r['evidence']) + '</ul></details>'
     def pubs(rows):
-        return '<ol>' + ''.join(f'<li><a href="{h(r["url"], quote=True)}">{h(r["title"])}</a> ({r["year"]})<br><small>{h(r["authors"])}</small><p class="tags">{h(labels[r["status"]])} · Fuentes: {h(", ".join(r["sources"]))}</p>{evidence_list(r)}</li>' for r in rows) + '</ol>' if rows else '<p>No hay registros.</p>'
+        return '<ol>' + ''.join(f'<li><a href="{h(r["url"], quote=True)}">{h(r["title"])}</a> ({r["year"]})<br><small>{h(r["authors"])}</small><p class="tags">{h(labels[r["status"]])} · Sources: {h(", ".join(r["sources"]))}</p>{evidence_list(r)}</li>' for r in rows) + '</ol>' if rows else '<p>No records.</p>'
     accepted = [r for r in publications if r['status'] != 'candidate']
     candidates = [r for r in publications if r['status'] == 'candidate']
     source_cards = ''.join(f'<li><strong>{h(k)}</strong>: {h(v["description"])}' + (f' Última consulta/revisión: {h(v["last_successful_check"])}.' if v.get('last_successful_check') else '') + '</li>' for k,v in statuses.items())
-    repo_html = '<ol>' + ''.join(f'<li><a href="{h(r["url"])}">{h(r["name"])}</a><p class="tags">Fuente: GitHub · {"mención en README" if r["status"]=="readme_reference" else "referencia de código"}</p>{evidence_list(r)}</li>' for r in repos) + '</ol>'
-    return f'''<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>gfwr · Publicaciones y usos</title>
+    repo_html = '<ol>' + ''.join(f'<li><a href="{h(r["url"])}">{h(r["name"])}</a><p class="tags">Source: GitHub · {"README mention" if r["status"]=="readme_reference" else "code reference"}</p>{evidence_list(r)}</li>' for r in repos) + '</ol>'
+    return f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>gfwr · Publications and usage</title>
 <style>body{{font:17px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}}a{{color:#006b79;overflow-wrap:anywhere}}li{{margin:0 0 20px}}small{{color:#485b65}}.tags{{font-size:14px;margin:6px 0;color:#006b79}}details{{background:white;padding:10px 15px;border-radius:8px}}nav a{{margin-right:18px}}h2{{margin-top:42px}}.intro{{border-left:4px solid #006b79;padding-left:20px}}</style>
-<main><h1>Publicaciones y usos de gfwr</h1><p class="intro">Cada registro identifica dónde se encontró y qué evidencia existe. Las publicaciones y los repositorios se cuentan por separado. La cobertura es parcial; aparecer en una búsqueda no demuestra una cita.</p>
-<nav><a href="#citations">Citas ({len(accepted)})</a><a href="#candidates">Por revisar ({len(candidates)})</a><a href="#repositories">Repositorios ({len(repos)})</a><a href="#sources">Fuentes</a></nav>
+<main><h1>gfwr publications and usage</h1><p class="intro">Each record identifies where it was found and what evidence is available. Publications and repositories are counted separately. Coverage is partial; appearing in a search does not prove a citation.</p>
+<nav><a href="#citations">Citations ({len(accepted)})</a><a href="#candidates">Needs review ({len(candidates)})</a><a href="#repositories">Repositories ({len(repos)})</a><a href="#sources">Sources</a></nav>
 <p><a href="https://github.com/cornejotux/gfwr-citations/tree/main/data">CSV, JSON y BibTeX</a> · <a href="https://github.com/cornejotux/gfwr-citations/actions">Historial de actualizaciones</a></p>
-<h2 id="sources">Cobertura y actualización por fuente</h2><ul>{source_cards}</ul>
-<p><a href="{SEARCH_URL}">Revisar Google Scholar</a> · <a href="https://www.researchgate.net/search/publication?q=gfwr">Revisar ResearchGate</a>. Los registros revisados se importan desde <a href="https://github.com/cornejotux/gfwr-citations/blob/main/config/external-publications.csv">el archivo de fuentes externas</a>. No se ejecuta una búsqueda automática en estas dos plataformas.</p>
-<h2 id="citations">Citas enlazadas o verificadas ({len(accepted)})</h2>{pubs(accepted)}
-<h2 id="candidates">Publicaciones por revisar ({len(candidates)})</h2>{pubs(candidates)}
-<h2 id="repositories">Repositorios con referencias a gfwr ({len(repos)})</h2><p>Importaciones, llamadas o enlaces al paquete en archivos R, Rmd y Quarto de repositorios públicos indexados por GitHub. No demuestra ejecución del código ni constituye una cita académica. Se excluyen el paquete original, este rastreador y los forks identificados por la API.</p>{repo_html}</main></html>'''
+<h2 id="sources">Coverage and update status by source</h2><ul>{source_cards}</ul>
+<p><a href="{SEARCH_URL}">Review Google Scholar</a> · <a href="https://www.researchgate.net/search/publication?q=gfwr">Review ResearchGate</a>. Reviewed records are imported from the <a href="https://github.com/cornejotux/gfwr-citations/blob/main/config/external-publications.csv">external sources file</a>. These two platforms are not searched automatically.</p>
+<h2 id="citations">Linked or verified citations ({len(accepted)})</h2>{pubs(accepted)}
+<h2 id="candidates">Publications needing review ({len(candidates)})</h2>{pubs(candidates)}
+<h2 id="repositories">Repositories referencing gfwr ({len(repos)})</h2><p>Imports, calls, or links to the package in R, Rmd, and Quarto files from public repositories indexed by GitHub. This does not prove code execution or constitute an academic citation. The original package, this tracker, and API-identified forks are excluded.</p>{repo_html}</main></html>'''
 
 
 def main():
@@ -252,12 +252,12 @@ def main():
     oa_failed = os.getenv('OPENALEX_OUTCOME') == 'failure'
     statuses = {
         'OpenAlex': {'mode': 'automatic', 'status': 'unavailable_cached_results' if oa_failed else oa.get('mention_search', 'unknown'),
-            'description': 'Actualización fallida; se conservan registros anteriores.' if oa_failed else ('Consulta automática mensual; búsqueda de menciones completa.' if oa.get('mention_search') == 'complete' else 'Citas por DOI actualizadas; búsqueda de menciones pendiente, se conserva la caché.')},
-        'GitHub': dict(gh_status, description='Búsqueda automática mensual de referencias al paquete en código.' if gh_status['status']=='complete' else ('Búsqueda de README públicos completada. Búsqueda de código limitada; se conserva su última caché.' if gh_status['status']=='partial_code_cached_readme_complete' else 'Búsqueda no disponible; se conservan resultados anteriores. Revisar Actions y el token GITHUB_SEARCH_TOKEN.'))}
+            'description': 'Update failed; previous records retained.' if oa_failed else ('Monthly automatic query; mention search completed.' if oa.get('mention_search') == 'complete' else 'DOI citations updated; mention search pending, cached results retained.')},
+        'GitHub': dict(gh_status, description='Monthly automatic search for package references in code.' if gh_status['status']=='complete' else ('Public README search completed. Code search was limited; its previous cache was retained.' if gh_status['status']=='partial_code_cached_readme_complete' else 'Search unavailable; previous results retained. Check Actions and the GITHUB_SEARCH_TOKEN.'))}
     for source in ('Google Scholar', 'ResearchGate'):
         dates = [r['observed_at'] for r in external if r['source']==source]
         statuses[source] = {'mode': 'manual', 'status': 'manual_review', 'last_successful_check': max(dates) if dates else None,
-            'description': 'Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.'}
+            'description': 'Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.'}
     write('data/records.json', publications)
     fields = ['id','year','title','authors','doi','url','status','sources','evidence']
     accepted = [r for r in publications if r['status'] != 'candidate']
