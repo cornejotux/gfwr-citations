@@ -4,9 +4,10 @@ library(jsonlite)
 library(yaml)
 source('scripts/bibtex.R')
 
-get_json <- function(url, query = list(), allow_404 = FALSE) {
+get_json <- function(url, query = list(), allow_404 = FALSE, search = FALSE) {
+  message('Fetching ', sub('\\?.*', '', url))
   req <- request(url) |> req_user_agent('gfwr-citations/1.0') |> req_timeout(60) |>
-    req_retry(max_tries = 4) |> req_error(is_error = function(resp) FALSE)
+    req_retry(max_tries = if (search) 1 else 4) |> req_error(is_error = function(resp) FALSE)
   if (length(query)) req <- do.call(req_url_query, c(list(req), query))
   key <- Sys.getenv('OPENALEX_API_KEY')
   if (startsWith(url, 'https://api.openalex.org/') && nzchar(key))
@@ -21,7 +22,7 @@ get_json <- function(url, query = list(), allow_404 = FALSE) {
 fetch_pages <- function(query) {
   cursor <- '*'; seen <- character(); out <- list()
   repeat {
-    page <- get_json('https://api.openalex.org/works', c(query, list(per_page = 200, cursor = cursor)))
+    page <- get_json('https://api.openalex.org/works', c(query, list(per_page = 200, cursor = cursor)), search = grepl('fulltext.search:', query$filter %||% '', fixed = TRUE))
     if (is.null(page$results) || is.null(page$meta$count)) stop('Invalid OpenAlex page')
     out <- c(out, page$results)
     next_cursor <- page$meta$next_cursor
@@ -69,8 +70,17 @@ main <- function() {
   if (length(missing)) message('DOIs not indexed in OpenAlex: ', paste(missing, collapse = ', '))
   if (!length(ids)) stop('No source DOI indexed; keeping existing outputs')
   citing <- fetch_pages(list(filter = paste0('cites:', paste(sub('https://openalex.org/', '', ids, fixed = TRUE), collapse = '|'))))
-  candidates <- unlist(lapply(cfg$search_terms, function(term)
-    fetch_pages(list(filter = paste0('fulltext.search:', term)))), recursive = FALSE)
+  search_error <- NULL
+  candidates <- tryCatch(unlist(lapply(cfg$search_terms, function(term)
+    fetch_pages(list(filter = paste0('fulltext.search:', term)))), recursive = FALSE),
+    error = function(e) {
+      search_error <<- conditionMessage(e)
+      if (file.exists('data/candidate-cache.json')) fromJSON('data/candidate-cache.json', simplifyVector=FALSE) else list()
+    })
+  if (!is.null(search_error)) {
+    warning('Mention search unavailable; retaining cached candidates. ', search_error)
+    if (nzchar(Sys.getenv('GITHUB_ACTIONS'))) cat('::warning::OpenAlex mention search unavailable. Configure OPENALEX_API_KEY; previous candidates retained.\n')
+  }
   manual_ids <- names(cfg$confirmed_works)
   manual <- lapply(manual_ids, function(id) get_json(paste0('https://api.openalex.org/works/', id)))
   all <- c(citing, manual, candidates)
@@ -100,6 +110,9 @@ main <- function() {
   ord <- order(-rows$year, rows$id); rows <- rows[ord, , drop = FALSE]; works <- works[ord]
   accepted <- rows$status != 'candidate'
   # All requests must finish before any output is replaced.
+  if (is.null(search_error)) write_changed('data/candidate-cache.json', toJSON(candidates, pretty=TRUE, auto_unbox=TRUE, null='null'))
+  search_status <- if (is.null(search_error)) 'complete' else if (file.exists('data/candidate-cache.json')) 'unavailable_cached_results' else 'unavailable_no_results'
+  write_changed('data/status.json', toJSON(list(citation_lookup='complete', mention_search=search_status), pretty=TRUE, auto_unbox=TRUE))
   for (name in c('citations', 'candidates')) {
     keep <- if (name == 'citations') accepted else !accepted
     tmp <- tempfile(); write.csv(rows[keep, , drop=FALSE], tmp, row.names=FALSE, na='', fileEncoding='UTF-8')
@@ -116,6 +129,7 @@ main <- function() {
   write_changed('docs/index.html', c('<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Publicaciones · gfwr</title>',
     '<style>body{font:18px/1.6 system-ui;max-width:960px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}a{color:#006b79}li{margin-bottom:18px}small{color:#485b65}</style><main><h1>Publicaciones y menciones de gfwr</h1>',
     '<p>Actualización mensual desde OpenAlex y Zenodo. Cobertura parcial: una mención no demuestra una cita al paquete. Las citas enlazadas reflejan el índice de OpenAlex y pueden requerir revisión.</p>',
+    if (!is.null(search_error)) '<p><strong>Búsqueda de menciones pendiente:</strong> OpenAlex no pudo completar la búsqueda de texto. Se conservan resultados anteriores, si existen. El número de candidatos no representa una búsqueda actual completa. Configurar OPENALEX_API_KEY o reintentar más tarde.</p>' else '<p>Búsqueda de menciones completada en la última actualización de datos.</p>',
     '<p><a href="https://github.com/cornejotux/gfwr-citations/tree/main/data">Descargar CSV, JSON y BibTeX</a> · <a href="https://github.com/cornejotux/gfwr-citations/actions">Ver última ejecución</a></p>',
     paste0('<h2>Citas enlazadas o verificadas (', sum(accepted), ')</h2>'), render_list(accepted),
     paste0('<h2>Menciones candidatas por revisar (', sum(!accepted), ')</h2>'), render_list(!accepted), '</main></html>'))

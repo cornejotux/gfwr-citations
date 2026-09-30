@@ -23,6 +23,8 @@ El workflow corre el **día 1 de cada mes a las 06:00 UTC**, permite ejecución 
 | `data/citations.bib` | Bibliografía de las citas enlazadas/verificadas |
 | `data/records.json` | Todos los registros, estado y evidencia |
 | `data/sources.json` | DOI consultados, IDs y DOI aún no indexados |
+| `data/status.json` | Estado de las consultas de citas y menciones |
+| `data/candidate-cache.json` | Última búsqueda completa de candidatos, cuando existe |
 | `docs/index.html` | Página estática que publica GitHub Pages |
 | `config/sources.yml` | Fuentes y decisiones de revisión |
 
@@ -62,7 +64,7 @@ Opcional: configurar el secreto `OPENALEX_API_KEY` en Settings → Secrets and v
 
 ## Alcance y mantenimiento
 
-OpenAlex no indexa todas las referencias ni el texto completo de todas las publicaciones. Las referencias mediante URL o sin DOI pueden quedar fuera; las búsquedas de texto pueden producir falsos positivos. No es un recuento exhaustivo de todas las citas a gfwr. Los DOI no indexados quedan registrados y se reintentan en cada ejecución. Errores de red, cuota o API hacen fallar la ejecución antes de sustituir los archivos; revisar Actions para distinguir una ejecución fallida de ausencia de resultados. Un registro retirado por OpenAlex puede desaparecer del listado, pero permanece en el historial Git.
+OpenAlex no indexa todas las referencias ni el texto completo de todas las publicaciones. Las referencias mediante URL o sin DOI pueden quedar fuera; las búsquedas de texto pueden producir falsos positivos. No es un recuento exhaustivo de todas las citas a gfwr. Los DOI no indexados quedan registrados y se reintentan en cada ejecución. Si falla Zenodo o la consulta de citas por DOI, la ejecución se detiene antes de sustituir los archivos. Si solo falla la búsqueda de menciones, las citas se actualizan, se conservan los candidatos anteriores y se publica una advertencia visible en el sitio, en Actions y en `data/status.json`. Sin caché previo, cero candidatos significa búsqueda pendiente, no ausencia de menciones. Un registro retirado por OpenAlex puede desaparecer del listado, pero permanece en el historial Git.
 
 El sitio enlaza a Actions para consultar la fecha de la última ejecución, sin modificar archivos solo para cambiar una fecha. CSV, JSON y BibTeX son salidas generadas: editar las decisiones en la configuración.
 
