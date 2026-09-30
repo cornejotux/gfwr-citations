@@ -44,7 +44,7 @@ class SourcesTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             try:
                 os.chdir(d)
-                cache={'records':[{'name':'org/repo'}],'checked_at':'2026-09-01'}
+                cache={'records':[{'id':'github:org/repo','name':'org/repo','evidence':[]}],'checked_at':'2026-09-01'}
                 s.write('data/github-cache.json',cache)
                 with patch.object(s,'search_pages',side_effect=RuntimeError('unavailable')):
                     rows,status=s.github_update()

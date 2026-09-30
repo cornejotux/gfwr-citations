@@ -1,5 +1,6 @@
 """Combine independently collected sources; standard-library only."""
 import csv
+import base64
 import html
 import hashlib
 import io
@@ -123,7 +124,37 @@ def github_update():
         error = str(e)
         print('GitHub unavailable; preserving cached results:', error)
         if os.getenv('GITHUB_ACTIONS'): print('::warning::GitHub search unavailable; cached repository results retained.')
-    return records, {'mode': 'automatic', 'status': status, 'last_successful_check': cache['checked_at'], 'error': error}
+    readme_status = None
+    if status != 'complete':
+        readme_cache = read('data/github-readme-cache.json', {'records': [], 'checked_at': None})
+        try:
+            discovered = []
+            for repo in search_pages('repositories', '"GlobalFishingWatch/gfwr" in:readme fork:false is:public'):
+                if repo.get('private') or repo.get('fork') or repo['full_name'].lower() in EXCLUDED:
+                    continue
+                payload = api('repos/' + repo['full_name'] + '/readme', {})
+                content = base64.b64decode(payload['content']).decode('utf-8')
+                if classify(content) == 'candidate': continue
+                discovered.append({'id': 'github:' + repo['full_name'].lower(), 'name': repo['full_name'],
+                    'url': repo['html_url'], 'source': 'GitHub', 'status': 'readme_reference',
+                    'evidence': [{'source':'GitHub','method':'readme_search_api','url':payload['html_url'],
+                        'path':payload['path'],'blob_sha':payload['sha'],'type':'readme_reference',
+                        'observed_at':TODAY,'note':'README público con una referencia al paquete; no demuestra uso o ejecución.'}]})
+            readme_cache = {'records': discovered, 'checked_at': TODAY}
+            write('data/github-readme-cache.json', readme_cache)
+            readme_status = 'complete'
+            status = 'partial_code_cached_readme_complete'
+        except (RuntimeError, OSError, ValueError, KeyError) as e:
+            readme_status = 'unavailable_cached_results'
+            print('GitHub README search unavailable:', str(e))
+        combined = {r['id']: dict(r, evidence=list(r['evidence'])) for r in records}
+        for r in readme_cache['records']:
+            if r['id'] in combined:
+                for evidence in r['evidence']:
+                    if evidence not in combined[r['id']]['evidence']: combined[r['id']]['evidence'].append(evidence)
+            else: combined[r['id']] = r
+        records = sorted(combined.values(), key=lambda r: r['name'].lower())
+    return records, {'mode': 'automatic', 'status': status, 'last_successful_check': cache['checked_at'], 'error': error, 'readme_search': readme_status}
 
 
 def doi_key(value):
@@ -198,7 +229,7 @@ def render(publications, repos, statuses):
     accepted = [r for r in publications if r['status'] != 'candidate']
     candidates = [r for r in publications if r['status'] == 'candidate']
     source_cards = ''.join(f'<li><strong>{h(k)}</strong>: {h(v["description"])}' + (f' Última consulta/revisión: {h(v["last_successful_check"])}.' if v.get('last_successful_check') else '') + '</li>' for k,v in statuses.items())
-    repo_html = '<ol>' + ''.join(f'<li><a href="{h(r["url"])}">{h(r["name"])}</a><p class="tags">Fuente: GitHub · referencia de código</p>{evidence_list(r)}</li>' for r in repos) + '</ol>'
+    repo_html = '<ol>' + ''.join(f'<li><a href="{h(r["url"])}">{h(r["name"])}</a><p class="tags">Fuente: GitHub · {"mención en README" if r["status"]=="readme_reference" else "referencia de código"}</p>{evidence_list(r)}</li>' for r in repos) + '</ol>'
     return f'''<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>gfwr · Publicaciones y usos</title>
 <style>body{{font:17px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}}a{{color:#006b79;overflow-wrap:anywhere}}li{{margin:0 0 20px}}small{{color:#485b65}}.tags{{font-size:14px;margin:6px 0;color:#006b79}}details{{background:white;padding:10px 15px;border-radius:8px}}nav a{{margin-right:18px}}h2{{margin-top:42px}}.intro{{border-left:4px solid #006b79;padding-left:20px}}</style>
 <main><h1>Publicaciones y usos de gfwr</h1><p class="intro">Cada registro identifica dónde se encontró y qué evidencia existe. Las publicaciones y los repositorios se cuentan por separado. La cobertura es parcial; aparecer en una búsqueda no demuestra una cita.</p>
@@ -222,7 +253,7 @@ def main():
     statuses = {
         'OpenAlex': {'mode': 'automatic', 'status': 'unavailable_cached_results' if oa_failed else oa.get('mention_search', 'unknown'),
             'description': 'Actualización fallida; se conservan registros anteriores.' if oa_failed else ('Consulta automática mensual; búsqueda de menciones completa.' if oa.get('mention_search') == 'complete' else 'Citas por DOI actualizadas; búsqueda de menciones pendiente, se conserva la caché.')},
-        'GitHub': dict(gh_status, description='Búsqueda automática mensual de referencias al paquete en código.' if gh_status['status']=='complete' else 'Búsqueda no disponible; se conservan resultados anteriores. Revisar Actions y el token GITHUB_SEARCH_TOKEN.')}
+        'GitHub': dict(gh_status, description='Búsqueda automática mensual de referencias al paquete en código.' if gh_status['status']=='complete' else ('Búsqueda de README públicos completada. Búsqueda de código limitada; se conserva su última caché.' if gh_status['status']=='partial_code_cached_readme_complete' else 'Búsqueda no disponible; se conservan resultados anteriores. Revisar Actions y el token GITHUB_SEARCH_TOKEN.'))}
     for source in ('Google Scholar', 'ResearchGate'):
         dates = [r['observed_at'] for r in external if r['source']==source]
         statuses[source] = {'mode': 'manual', 'status': 'manual_review', 'last_successful_check': max(dates) if dates else None,
