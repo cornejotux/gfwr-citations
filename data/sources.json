@@ -1,0 +1,5 @@
+{
+  "dois": ["10.5281/zenodo.13953011", "10.5281/zenodo.15098364", "10.5281/zenodo.15263355", "10.5281/zenodo.16754866", "10.5281/zenodo.18628111", "10.5281/zenodo.6862877", "10.5281/zenodo.6862878", "10.5281/zenodo.7130233"],
+  "openalex_ids": ["https://openalex.org/W6949329298", "https://openalex.org/W6968209646", "https://openalex.org/W6893207118", "https://openalex.org/W6968369033", "https://openalex.org/W7128772167", "https://openalex.org/W6912677840", "https://openalex.org/W6968834796", "https://openalex.org/W6950480367"],
+  "not_indexed": []
+}
