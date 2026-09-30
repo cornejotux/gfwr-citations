@@ -1,10 +1,10 @@
 {
   "GitHub": {
-    "description": "Búsqueda automática mensual de referencias al paquete en código.",
-    "error": null,
+    "description": "Búsqueda no disponible; se conservan resultados anteriores. Revisar Actions y el token GITHUB_SEARCH_TOKEN.",
+    "error": "GitHub HTTP 429 on search/code",
     "last_successful_check": "2026-09-30",
     "mode": "automatic",
-    "status": "complete"
+    "status": "unavailable_cached_results"
   },
   "Google Scholar": {
     "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
