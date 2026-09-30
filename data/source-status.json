@@ -1,10 +1,11 @@
 {
   "GitHub": {
-    "description": "Búsqueda no disponible; se conservan resultados anteriores. Revisar Actions y el token GITHUB_SEARCH_TOKEN.",
-    "error": "GitHub HTTP 429 on search/code",
+    "description": "Búsqueda automática mensual de referencias al paquete en código.",
+    "error": null,
     "last_successful_check": "2026-09-30",
     "mode": "automatic",
-    "status": "unavailable_cached_results"
+    "readme_search": null,
+    "status": "complete"
   },
   "Google Scholar": {
     "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
@@ -13,9 +14,9 @@
     "status": "manual_review"
   },
   "OpenAlex": {
-    "description": "Citas por DOI actualizadas; búsqueda de menciones pendiente, se conserva la caché.",
+    "description": "Consulta automática mensual; búsqueda de menciones completa.",
     "mode": "automatic",
-    "status": "unavailable_cached_results"
+    "status": "complete"
   },
   "ResearchGate": {
     "description": "Consulta e importación revisada; no se actualiza automáticamente. La fecha corresponde a los registros revisados, no a una búsqueda exhaustiva.",
