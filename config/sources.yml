@@ -1,0 +1,13 @@
+package: gfwr
+zenodo_record: '18628111'
+concept_doi: 10.5281/zenodo.6862877
+extra_dois: []
+search_terms:
+  - gfwr
+min_year: 2022
+exclude_types: [paratext, erratum, retraction, peer-review, supplementary-materials, software]
+exclude_works: []
+# OpenAlex IDs with manually verified evidence URLs, e.g.:
+# confirmed_works:
+#   W1234567890: https://publisher.example/article
+confirmed_works: {}

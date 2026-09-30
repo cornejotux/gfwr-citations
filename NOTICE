@@ -1,0 +1,12 @@
+gfwr-citations
+
+scripts/bibtex.R is adapted from NCEAS/codyn:
+https://github.com/NCEAS/codyn/blob/main/pkgdown/citations/update_citations.R
+Original file blob: b3586577e1df3fc10461e3d57e9a4dafc0ca7ed2
+Original authors: the codyn contributors (see the upstream DESCRIPTION).
+Upstream license: Apache License 2.0.
+Changes: extracted BibTeX formatting helpers for a standalone gfwr tracker.
+The monthly workflow and OpenAlex citation lookup follow the upstream design.
+
+Other files: Copyright 2026 gfwr-citations contributors.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
