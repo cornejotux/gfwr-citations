@@ -1,0 +1,22 @@
+{
+  "google_scholar": {
+    "note": "Not automatically scraped.",
+    "snapshot": {
+      "citations": 472,
+      "h_index": 8,
+      "i10_index": 8,
+      "observed_at": "2026-09-30"
+    },
+    "status": "manual_profile_snapshot",
+    "url": "https://scholar.google.com/citations?user=4mnGFJcAAAAJ&hl=en"
+  },
+  "openalex": {
+    "status": "complete",
+    "url": "https://api.openalex.org"
+  },
+  "orcid": {
+    "status": "complete",
+    "url": "https://orcid.org/0000-0002-4244-2865"
+  },
+  "updated_at": "2026-09-30"
+}

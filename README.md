@@ -2,6 +2,8 @@
 
 **[View publications and repositories](https://cornejotux.github.io/gfwr-citations/)** · [Actions](https://github.com/cornejotux/gfwr-citations/actions)
 
+**[View Jorge Cornejo-Donoso's citing publications](https://cornejotux.github.io/gfwr-citations/my-publications.html)** · sourced from [ORCID](https://orcid.org/0000-0002-4244-2865) and OpenAlex.
+
 Tracker for citations, mentions, and code references to the [gfwr](https://github.com/GlobalFishingWatch/gfwr) R package. It follows the DOI → OpenAlex → GitHub Actions design used by [codyn](https://github.com/NCEAS/codyn/blob/main/.github/workflows/update-citations.yaml), with provenance recorded for every result.
 
 ## Sources
@@ -38,6 +40,8 @@ Each publication has `sources` and an `evidence` list. Evidence records the plat
 | `config/external-publications.csv` | Reviewed Google Scholar and ResearchGate records |
 | `config/sources.yml` | OpenAlex DOIs, filters, and manual reviews |
 | `docs/index.html` | GitHub Pages site |
+| `data/author/` | ORCID works, OpenAlex citing works, and source status for the author citation page |
+| `docs/my-publications.html` | Author citation page |
 
 ## Adding external records
 
@@ -57,6 +61,7 @@ Rscript tests/test.R
 python3 -m unittest discover -s tests -p 'test_*.py'
 Rscript scripts/update_citations.R
 python3 scripts/update_sources.py
+python3 scripts/update_author_citations.py
 ```
 
 Coverage is partial. OpenAlex, Google Scholar, ResearchGate, and GitHub have different indexing and access rules; records can contain false positives and missing citations. Full articles are not redistributed. See `NOTICE` and `LICENSE` for attribution and licensing.

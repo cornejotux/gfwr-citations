@@ -34,6 +34,8 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: Rscript scripts/update_citations.R
+      - name: Update author citation page
+        run: python3 scripts/update_author_citations.py
       - name: Update GitHub and combine all sources
         env:
           GH_TOKEN: ${{ secrets.GITHUB_SEARCH_TOKEN || github.token }}
