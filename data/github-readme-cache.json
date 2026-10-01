@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-01",
+  "records": [
+    {
+      "evidence": [
+        {
+          "blob_sha": "beb6d6f36f0eb9cc62d609d9ba1a971759d32ec3",
+          "method": "readme_search_api",
+          "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
+          "observed_at": "2026-10-01",
+          "path": "README.md",
+          "source": "GitHub",
+          "type": "readme_reference",
+          "url": "https://github.com/luishfran/exploring-BrazilianTrawlers/blob/main/README.md"
+        }
+      ],
+      "id": "github:luishfran/exploring-braziliantrawlers",
+      "name": "luishfran/exploring-BrazilianTrawlers",
+      "source": "GitHub",
+      "status": "readme_reference",
+      "url": "https://github.com/luishfran/exploring-BrazilianTrawlers"
+    },
+    {
+      "evidence": [
+        {
+          "blob_sha": "32d78a7e37ac09cec0509dc07f76d4838ccb95d2",
+          "method": "readme_search_api",
+          "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
+          "observed_at": "2026-10-01",
+          "path": "README.md",
+          "source": "GitHub",
+          "type": "readme_reference",
+          "url": "https://github.com/ZHANGZ1YUE/Global_Fishing_Analysis/blob/main/README.md"
+        }
+      ],
+      "id": "github:zhangz1yue/global_fishing_analysis",
+      "name": "ZHANGZ1YUE/Global_Fishing_Analysis",
+      "source": "GitHub",
+      "status": "readme_reference",
+      "url": "https://github.com/ZHANGZ1YUE/Global_Fishing_Analysis"
+    },
+    {
+      "evidence": [
+        {
+          "blob_sha": "c58aba2ed0b946e0e6d29b387b835e7e61de30c4",
+          "method": "readme_search_api",
+          "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
+          "observed_at": "2026-10-01",
+          "path": "README.md",
+          "source": "GitHub",
+          "type": "readme_reference",
+          "url": "https://github.com/filippomaria-cassarino/fish_biodiversity_biomass/blob/main/README.md"
+        }
+      ],
+      "id": "github:filippomaria-cassarino/fish_biodiversity_biomass",
+      "name": "filippomaria-cassarino/fish_biodiversity_biomass",
+      "source": "GitHub",
+      "status": "readme_reference",
+      "url": "https://github.com/filippomaria-cassarino/fish_biodiversity_biomass"
+    },
+    {
+      "evidence": [
+        {
+          "blob_sha": "9d94764bf4bbbe1979f8f45c64eac3c47af32d99",
+          "method": "readme_search_api",
+          "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
+          "observed_at": "2026-10-01",
+          "path": "README.md",
+          "source": "GitHub",
+          "type": "readme_reference",
+          "url": "https://github.com/LeoUtas/fishingvizr/blob/main/README.md"
+        }
+      ],
+      "id": "github:leoutas/fishingvizr",
+      "name": "LeoUtas/fishingvizr",
+      "source": "GitHub",
+      "status": "readme_reference",
+      "url": "https://github.com/LeoUtas/fishingvizr"
+    }
+  ]
+}

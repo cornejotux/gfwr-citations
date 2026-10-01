@@ -1,11 +1,11 @@
 {
   "GitHub": {
-    "description": "Monthly automatic search for package references in code.",
-    "error": null,
+    "description": "Public README search completed. Code search was limited; its previous cache was retained.",
+    "error": "GitHub HTTP 429 on search/code",
     "last_successful_check": "2026-10-01",
     "mode": "automatic",
-    "readme_search": null,
-    "status": "complete"
+    "readme_search": "complete",
+    "status": "partial_code_cached_readme_complete"
   },
   "Google Scholar": {
     "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
