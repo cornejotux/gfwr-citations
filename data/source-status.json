@@ -2,7 +2,7 @@
   "GitHub": {
     "description": "Monthly automatic search for package references in code.",
     "error": null,
-    "last_successful_check": "2026-09-30",
+    "last_successful_check": "2026-10-01",
     "mode": "automatic",
     "readme_search": null,
     "status": "complete"
@@ -14,9 +14,9 @@
     "status": "manual_review"
   },
   "OpenAlex": {
-    "description": "DOI citations updated; mention search pending, cached results retained.",
+    "description": "Monthly automatic query; mention search completed.",
     "mode": "automatic",
-    "status": "unavailable_cached_results"
+    "status": "complete"
   },
   "ResearchGate": {
     "description": "Reviewed query and import; not updated automatically. The date is the review date, not an exhaustive search date.",
