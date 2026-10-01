@@ -2,7 +2,7 @@
 
 **[View publications and repositories](https://cornejotux.github.io/gfwr-citations/)** · [Actions](https://github.com/cornejotux/gfwr-citations/actions)
 
-**[View Jorge Cornejo-Donoso's citing publications](https://cornejotux.github.io/gfwr-citations/my-publications.html)** · sourced from [ORCID](https://orcid.org/0000-0002-4244-2865) and OpenAlex.
+**[View Jorge Cornejo-Donoso's citing publications](https://cornejotux.github.io/gfwr-citations/my-publications.html)** · uses the 16 works listed in Google Scholar, supplements them with ORCID-only works, and retrieves citations from OpenAlex.
 
 Tracker for citations, mentions, and code references to the [gfwr](https://github.com/GlobalFishingWatch/gfwr) R package. It follows the DOI → OpenAlex → GitHub Actions design used by [codyn](https://github.com/NCEAS/codyn/blob/main/.github/workflows/update-citations.yaml), with provenance recorded for every result.
 

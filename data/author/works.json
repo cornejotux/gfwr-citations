@@ -1,10 +1,24 @@
 [
   {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "fFSKOagxvKUC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:fFSKOagxvKUC",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "gfwr: Access data from Global Fishing Watch APIs. R package version 3.0",
+    "year": "2026"
+  },
+  {
     "doi": "10.5670/oceanog.2025.121",
     "openalex_id": "https://openalex.org/W4408092796",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/179301168",
     "put_code": "179301168",
+    "sources": [
+      "ORCID"
+    ],
     "title": "Harnessing Marine Open Data Science for Ocean Sustainability in Africa, South Asia, and Latin America",
     "year": "2025"
   },
@@ -13,8 +27,35 @@
     "openalex_id": "https://openalex.org/W2981252449",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/63661039",
-    "put_code": "63661039",
+    "scholar_id": "OR75R8vi5nAC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:OR75R8vi5nAC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Cooperation as a solution to shared resources in territorial use rights in fisheries",
+    "year": "2020"
+  },
+  {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "OcBU2YAGkTUC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:OcBU2YAGkTUC",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "Eco-Label Conveys Reliable Information on Fish Stock Health to Seafood Consumers (vol 7, e43765, 2012)",
+    "year": "2019"
+  },
+  {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "ODE9OILHJdcC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:ODE9OILHJdcC",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "Correction: Eco-Label Conveys Reliable Information on Fish Stock Health to Seafood Consumers",
     "year": "2019"
   },
   {
@@ -22,8 +63,13 @@
     "openalex_id": "https://openalex.org/W1889428018",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004363",
-    "put_code": "32004363",
-    "title": "Ordered, Disordered and Partially Synchronized Schools of Fish",
+    "scholar_id": "DJbcl8HfkQkC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:DJbcl8HfkQkC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
+    "title": "Ordered, disordered and partially synchronized schools of fish",
     "year": "2017"
   },
   {
@@ -31,7 +77,12 @@
     "openalex_id": "https://openalex.org/W2762874561",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/37592260",
-    "put_code": "37592260",
+    "scholar_id": "bKqednn6t2AC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:bKqednn6t2AC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Effects of fish movement assumptions on the design of a marine protected area to protect an overfished stock",
     "year": "2017"
   },
@@ -40,7 +91,12 @@
     "openalex_id": "https://openalex.org/W2604487854",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004362",
-    "put_code": "32004362",
+    "scholar_id": "HtS1dXgVpQUC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:HtS1dXgVpQUC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Disentangling the effects of fishing and environmental forcing on demographic variation in an exploited species",
     "year": "2017"
   },
@@ -49,8 +105,13 @@
     "openalex_id": "https://openalex.org/W2583142838",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004356",
-    "put_code": "32004356",
-    "title": "Are Territorial Use Rights in Fisheries ( TURFs ) sufficiently large ?",
+    "scholar_id": "mNrWkgRL2YcC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:mNrWkgRL2YcC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
+    "title": "Are territorial use rights in fisheries (TURFs) sufficiently large?",
     "year": "2017"
   },
   {
@@ -58,8 +119,35 @@
     "openalex_id": "https://openalex.org/W2191646576",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004361",
-    "put_code": "32004361",
+    "scholar_id": "4vMrXwiscB8C",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:4vMrXwiscB8C",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Evaluating seafood eco-labeling as a mechanism to reduce collateral impacts of fisheries in an ecosystem-based fisheries management context",
+    "year": "2016"
+  },
+  {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "cWzG1nlazyYC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:cWzG1nlazyYC",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "Effects of fish movement and environmental variability in the design and success of a marine protected area",
+    "year": "2016"
+  },
+  {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "3htObqc8RwsC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:3htObqc8RwsC",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "Effects of fish movement and environmental variability in the design and success of a",
     "year": "2016"
   },
   {
@@ -67,8 +155,13 @@
     "openalex_id": "https://openalex.org/W2150752137",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004365",
-    "put_code": "32004365",
-    "title": "Eco-Label Conveys Reliable Information on Fish Stock Health to Seafood Consumers",
+    "scholar_id": "9yKSN-GCB0IC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:9yKSN-GCB0IC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
+    "title": "Eco-label conveys reliable information on fish stock health to seafood consumers",
     "year": "2012"
   },
   {
@@ -76,7 +169,12 @@
     "openalex_id": "https://openalex.org/W2082711086",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004359",
-    "put_code": "32004359",
+    "scholar_id": "u-x6o8ySG0sC",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:u-x6o8ySG0sC",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "New records of orange roughy Hoplostethus atlanticus juveniles in Chile",
     "year": "2010"
   },
@@ -85,7 +183,12 @@
     "openalex_id": "https://openalex.org/W1862340379",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004360",
-    "put_code": "32004360",
+    "scholar_id": "u5HHmVD_uO8C",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:u5HHmVD_uO8C",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Developing seamount fishery produces localized reductions in abundance and changes in species composition of bycatch",
     "year": "2010"
   },
@@ -94,8 +197,24 @@
     "openalex_id": "https://openalex.org/W2097379251",
     "openalex_status": "complete",
     "orcid_url": "https://orcid.org/0000-0002-4244-2865/32004358",
-    "put_code": "32004358",
+    "scholar_id": "d1gkVwhDpl0C",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:d1gkVwhDpl0C",
+    "sources": [
+      "Google Scholar",
+      "ORCID"
+    ],
     "title": "Preliminary trophic model of the Antarctic Peninsula Ecosystem (Sub-area CCAMLR 48.1)",
     "year": "2008"
+  },
+  {
+    "doi": "",
+    "openalex_status": "no_doi",
+    "scholar_id": "KbBQZpvPDL4C",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:KbBQZpvPDL4C",
+    "sources": [
+      "Google Scholar"
+    ],
+    "title": "Oyarzún, C., Hernández, E., and Toledo",
+    "year": ""
   }
 ]

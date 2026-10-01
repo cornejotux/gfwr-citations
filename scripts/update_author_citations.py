@@ -21,6 +21,7 @@ SCHOLAR_URL = "https://scholar.google.com/citations?user=4mnGFJcAAAAJ&hl=en"
 OPENALEX = "https://api.openalex.org"
 TODAY = date.today().isoformat()
 SCHOLAR_SNAPSHOT = {"observed_at": "2026-09-30", "citations": 472, "h_index": 8, "i10_index": 8}
+SCHOLAR_WORKS_PATH = Path("config/author-scholar-works.json")
 # Correct a malformed DOI in the public ORCID record while retaining its source.
 DOI_OVERRIDES = {"10.1111/j.december 20091439-0485.2010.00372.x": "10.1111/j.1439-0485.2010.00372.x"}
 
@@ -56,6 +57,32 @@ def orcid_works(payload):
     return sorted(works, key=lambda w: (w["year"] or "", w["title"]), reverse=True)
 
 
+def scholar_works():
+    rows = json.loads(SCHOLAR_WORKS_PATH.read_text(encoding="utf-8"))
+    for row in rows:
+        row["doi"] = doi_key(row.get("doi", ""))
+        row["scholar_url"] = f"https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4mnGFJcAAAAJ&citation_for_view=4mnGFJcAAAAJ:{row['scholar_id']}"
+    return rows
+
+
+def merge_works(orcid, scholar):
+    """Keep every Scholar entry and add ORCID-only works, retaining both sources."""
+    merged = []
+    by_doi = {}
+    for row in scholar:
+        item = dict(row, sources=["Google Scholar"])
+        merged.append(item)
+        if item["doi"]: by_doi[item["doi"]] = item
+    for row in orcid:
+        if row["doi"] in by_doi:
+            target = by_doi[row["doi"]]
+            target["orcid_url"] = row["orcid_url"]
+            target["sources"].append("ORCID")
+        else:
+            merged.append(dict(row, sources=["ORCID"]))
+    return sorted(merged, key=lambda w: (w.get("year") or "", w["title"]), reverse=True)
+
+
 def openalex_work(doi):
     return get_json(f"{OPENALEX}/works/https://doi.org/{quote(doi, safe='/')}")
 
@@ -84,7 +111,7 @@ def citation_row(work, cited_doi):
 
 
 def collect():
-    works = orcid_works(get_json(f"https://pub.orcid.org/v3.0/{ORCID}/works"))
+    works = merge_works(orcid_works(get_json(f"https://pub.orcid.org/v3.0/{ORCID}/works")), scholar_works())
     citations = {}
     for publication in works:
         if not publication["doi"]:
@@ -114,9 +141,9 @@ def csv_text(rows, fields):
 def render(works, citations):
     h = html.escape
     def publication(row):
-        link = "https://doi.org/" + row["doi"] if row["doi"] else row["orcid_url"]
+        link = "https://doi.org/" + row["doi"] if row["doi"] else (row.get("scholar_url") or row.get("orcid_url"))
         doi = f' · <a href="https://doi.org/{h(row["doi"], quote=True)}">DOI</a>' if row["doi"] else " · No DOI in ORCID"
-        return f'<li><a href="{h(link, quote=True)}">{h(row["title"])}</a> ({h(str(row["year"]))}){doi}</li>'
+        return f'<li><a href="{h(link, quote=True)}">{h(row["title"])}</a> ({h(str(row["year"]))}){doi}<p class="tags">Source: {h(", ".join(row["sources"]))}</p></li>'
     def citation(row):
         doi = f' · <a href="https://doi.org/{h(row["doi"], quote=True)}">DOI</a>' if row["doi"] else ""
         cited = ", ".join(row["cites_dois"])
@@ -124,11 +151,11 @@ def render(works, citations):
     return f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Jorge Cornejo-Donoso · Citation tracker</title>
 <style>body{{font:17px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}}a{{color:#006b79;overflow-wrap:anywhere}}li{{margin:0 0 18px}}small{{color:#485b65}}.tags{{font-size:14px;margin:6px 0;color:#006b79}}nav a{{margin-right:18px}}h2{{margin-top:42px}}.intro{{border-left:4px solid #006b79;padding-left:20px}}.card{{background:white;padding:14px 18px;border-radius:8px}}</style>
 <main><nav><a href="index.html">gfwr tracker</a><a href="#works">My publications</a><a href="#citations">Citing publications</a><a href="#sources">Sources</a></nav><h1>Jorge Cornejo-Donoso · Citation tracker</h1>
-<p class="intro">A deduplicated list of publications that cite works associated with this ORCID record. It is refreshed monthly and records the source of each result.</p>
-<p class="card"><strong>{len(citations)}</strong> distinct citing publications found by OpenAlex for <strong>{len(works)}</strong> works in ORCID. Last successful refresh: {TODAY}.</p>
+<p class="intro">A list of works from the Google Scholar profile, supplemented by ORCID-only works, with publications that cite their DOIs. It is refreshed monthly and records the source of each result.</p>
+<p class="card"><strong>{len(citations)}</strong> distinct citing publications found by OpenAlex for <strong>{len(works)}</strong> listed works. Last successful refresh: {TODAY}.</p>
 <h2 id="sources">Sources and coverage</h2><ul><li><a href="{ORCID_URL}">ORCID</a>: public list of works and DOIs; refreshed automatically.</li><li><a href="https://openalex.org">OpenAlex</a>: citing publications for the ORCID DOIs; refreshed automatically.</li><li><a href="{SCHOLAR_URL}">Google Scholar profile</a>: author-profile cross-check. Manual snapshot on {SCHOLAR_SNAPSHOT["observed_at"]}: {SCHOLAR_SNAPSHOT["citations"]} citations, h-index {SCHOLAR_SNAPSHOT["h_index"]}, i10-index {SCHOLAR_SNAPSHOT["i10_index"]}. It is not scraped or used as an automated record source.</li></ul>
 <p>Coverage depends on the identifiers in ORCID and on OpenAlex indexing. A work without a DOI is retained in the works list but cannot yet be queried for citations.</p>
-<h2 id="works">Works in ORCID ({len(works)})</h2><ol>{''.join(publication(w) for w in works)}</ol>
+<h2 id="works">Listed works ({len(works)})</h2><ol>{''.join(publication(w) for w in works)}</ol>
 <h2 id="citations">Citing publications ({len(citations)})</h2><ol>{''.join(citation(c) for c in citations) or '<li>No OpenAlex citation records found.</li>'}</ol>
 <p><a href="https://github.com/cornejotux/gfwr-citations/tree/main/data/author">Download the generated data</a> · <a href="https://github.com/cornejotux/gfwr-citations/actions">Update history</a></p></main></html>'''
 
@@ -146,7 +173,7 @@ def main():
     write("data/author/citing-publications.csv", csv_text(citations, ["id", "title", "year", "authors", "doi", "url", "cites_dois", "source", "source_url"]))
     write("data/author/status.json", status)
     write("docs/my-publications.html", render(works, citations))
-    print(f"{len(works)} ORCID works; {len(citations)} distinct OpenAlex citing publications")
+    print(f"{len(works)} listed works; {len(citations)} distinct OpenAlex citing publications")
     return 0
 
 

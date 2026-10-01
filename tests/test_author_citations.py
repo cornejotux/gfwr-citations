@@ -15,6 +15,13 @@ class AuthorCitationTests(unittest.TestCase):
         payload = {'group': [{'work-summary': [{'put-code': 7, 'title': {'title': {'value': 'A work'}}, 'publication-date': {'year': {'value': '2020'}}, 'external-ids': {'external-id': [{'external-id-type': 'doi', 'external-id-value': '10.1/ABC'}]}}]}]}
         self.assertEqual(a.orcid_works(payload), [{'put_code': '7', 'title': 'A work', 'year': '2020', 'doi': '10.1/abc', 'orcid_url': 'https://orcid.org/0000-0002-4244-2865/7'}])
 
+    def test_merge_keeps_scholar_items_and_adds_orcid_only_work(self):
+        scholar = [{'title': 'Scholar work', 'year': '2020', 'doi': '10.1/a'}]
+        orcid = [{'title': 'ORCID version', 'year': '2020', 'doi': '10.1/a', 'orcid_url': 'https://orcid.org/1'}, {'title': 'ORCID only', 'year': '2021', 'doi': '10.1/b', 'orcid_url': 'https://orcid.org/2'}]
+        rows = a.merge_works(orcid, scholar)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(next(r for r in rows if r['doi']=='10.1/a')['sources'], ['Google Scholar', 'ORCID'])
+
 
 if __name__ == '__main__':
     unittest.main()
