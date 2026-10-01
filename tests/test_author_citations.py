@@ -22,6 +22,10 @@ class AuthorCitationTests(unittest.TestCase):
         self.assertEqual(len(rows), 2)
         self.assertEqual(next(r for r in rows if r['doi']=='10.1/a')['sources'], ['Google Scholar', 'ORCID'])
 
+    def test_citations_are_grouped_by_cited_doi(self):
+        rows = [{'title': 'A', 'cites_dois': ['10.1/a']}, {'title': 'Both', 'cites_dois': ['10.1/a', '10.1/b']}, {'title': 'B', 'cites_dois': ['10.1/b']}]
+        self.assertEqual([r['title'] for r in a.citations_for_work('10.1/a', rows)], ['A', 'Both'])
+
 
 if __name__ == '__main__':
     unittest.main()

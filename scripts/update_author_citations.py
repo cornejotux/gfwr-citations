@@ -138,25 +138,34 @@ def csv_text(rows, fields):
     return stream.getvalue()
 
 
+def citations_for_work(doi, citations):
+    """Return the deduplicated OpenAlex records that cite one listed DOI."""
+    return [row for row in citations if doi and doi in row["cites_dois"]]
+
+
 def render(works, citations):
     h = html.escape
     def publication(row):
         link = "https://doi.org/" + row["doi"] if row["doi"] else (row.get("scholar_url") or row.get("orcid_url"))
         doi = f' · <a href="https://doi.org/{h(row["doi"], quote=True)}">DOI</a>' if row["doi"] else " · No DOI in ORCID"
-        return f'<li><a href="{h(link, quote=True)}">{h(row["title"])}</a> ({h(str(row["year"]))}){doi}<p class="tags">Source: {h(", ".join(row["sources"]))}</p></li>'
+        linked = citations_for_work(row["doi"], citations)
+        if row["doi"]:
+            citation_menu = f'<details><summary>{len(linked)} citing publications</summary><ol>{"".join(citation(c) for c in linked) or "<li>No OpenAlex citation records found.</li>"}</ol></details>'
+        else:
+            citation_menu = '<p class="tags">Citation lookup unavailable: this record has no DOI.</p>'
+        return f'<li><a href="{h(link, quote=True)}">{h(row["title"])}</a> ({h(str(row["year"]))}){doi}<p class="tags">Source: {h(", ".join(row["sources"]))}</p>{citation_menu}</li>'
     def citation(row):
         doi = f' · <a href="https://doi.org/{h(row["doi"], quote=True)}">DOI</a>' if row["doi"] else ""
         cited = ", ".join(row["cites_dois"])
         return f'<li><a href="{h(row["url"], quote=True)}">{h(row["title"])}</a> ({h(str(row["year"]))})<br><small>{h(row["authors"])}</small><p class="tags">Source: <a href="{h(row["source_url"], quote=True)}">OpenAlex</a> · cites: {h(cited)}{doi}</p></li>'
     return f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Jorge Cornejo-Donoso · Citation tracker</title>
-<style>body{{font:17px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}}a{{color:#006b79;overflow-wrap:anywhere}}li{{margin:0 0 18px}}small{{color:#485b65}}.tags{{font-size:14px;margin:6px 0;color:#006b79}}nav a{{margin-right:18px}}h2{{margin-top:42px}}.intro{{border-left:4px solid #006b79;padding-left:20px}}.card{{background:white;padding:14px 18px;border-radius:8px}}</style>
-<main><nav><a href="index.html">gfwr tracker</a><a href="#works">My publications</a><a href="#citations">Citing publications</a><a href="#sources">Sources</a></nav><h1>Jorge Cornejo-Donoso · Citation tracker</h1>
+<style>body{{font:17px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#173343;background:#f5f9fa}}a{{color:#006b79;overflow-wrap:anywhere}}li{{margin:0 0 18px}}small{{color:#485b65}}.tags{{font-size:14px;margin:6px 0;color:#006b79}}nav a{{margin-right:18px}}h2{{margin-top:42px}}.intro{{border-left:4px solid #006b79;padding-left:20px}}.card,details{{background:white;padding:14px 18px;border-radius:8px}}details{{margin:10px 0}}details li{{margin:0 0 12px}}</style>
+<main><nav><a href="index.html">gfwr tracker</a><a href="#works">My publications</a><a href="#sources">Sources</a></nav><h1>Jorge Cornejo-Donoso · Citation tracker</h1>
 <p class="intro">A list of works from the Google Scholar profile, supplemented by ORCID-only works, with publications that cite their DOIs. It is refreshed monthly and records the source of each result.</p>
 <p class="card"><strong>{len(citations)}</strong> distinct citing publications found by OpenAlex for <strong>{len(works)}</strong> listed works. Last successful refresh: {TODAY}.</p>
 <h2 id="sources">Sources and coverage</h2><ul><li><a href="{ORCID_URL}">ORCID</a>: public list of works and DOIs; refreshed automatically.</li><li><a href="https://openalex.org">OpenAlex</a>: citing publications for the ORCID DOIs; refreshed automatically.</li><li><a href="{SCHOLAR_URL}">Google Scholar profile</a>: author-profile cross-check. Manual snapshot on {SCHOLAR_SNAPSHOT["observed_at"]}: {SCHOLAR_SNAPSHOT["citations"]} citations, h-index {SCHOLAR_SNAPSHOT["h_index"]}, i10-index {SCHOLAR_SNAPSHOT["i10_index"]}. It is not scraped or used as an automated record source.</li></ul>
 <p>Coverage depends on the identifiers in ORCID and on OpenAlex indexing. A work without a DOI is retained in the works list but cannot yet be queried for citations.</p>
-<h2 id="works">Listed works ({len(works)})</h2><ol>{''.join(publication(w) for w in works)}</ol>
-<h2 id="citations">Citing publications ({len(citations)})</h2><ol>{''.join(citation(c) for c in citations) or '<li>No OpenAlex citation records found.</li>'}</ol>
+<h2 id="works">Listed works ({len(works)})</h2><p>Open a work to see its citing publications. The number in each menu is the OpenAlex citation count for that work.</p><ol>{''.join(publication(w) for w in works)}</ol>
 <p><a href="https://github.com/cornejotux/gfwr-citations/tree/main/data/author">Download the generated data</a> · <a href="https://github.com/cornejotux/gfwr-citations/actions">Update history</a></p></main></html>'''
 
 
