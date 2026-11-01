@@ -8,7 +8,7 @@
         "path": "scripts/1_process_data.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/670481875058237d00073a233fd71320370414c4/scripts/1_process_data.R"
+        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/ad9d072d2c616e3a420e17114234a162d0e8d021/scripts/1_process_data.R"
       },
       {
         "blob_sha": "16f1841fe602763d7f804f936af17760a006979b",
@@ -17,7 +17,7 @@
         "path": "scripts/5_Tonn_Lenght.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/670481875058237d00073a233fd71320370414c4/scripts/5_Tonn_Lenght.R"
+        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/ad9d072d2c616e3a420e17114234a162d0e8d021/scripts/5_Tonn_Lenght.R"
       },
       {
         "blob_sha": "8043124401313b4d7b13917a95a791256d1f4fb2",
@@ -26,7 +26,7 @@
         "path": "scripts/3_final_queries.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/670481875058237d00073a233fd71320370414c4/scripts/3_final_queries.R"
+        "url": "https://github.com/AlejandroZimmerman/Master_Thesis_BSE/blob/ad9d072d2c616e3a420e17114234a162d0e8d021/scripts/3_final_queries.R"
       }
     ],
     "id": "github:alejandrozimmerman/master_thesis_bse",
@@ -233,16 +233,16 @@
         "path": "2_enviro/2_3_GFW_download.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/davidruizgarci/PotentialSpawningAreas/blob/3be4052175eaefe4a38796f43fe7beaa5e909101/2_enviro/2_3_GFW_download.R"
+        "url": "https://github.com/davidruizgarci/PotentialSpawningAreas/blob/f433f5231fd52b7a208c47d51303065e93200c95/2_enviro/2_3_GFW_download.R"
       },
       {
-        "blob_sha": "95b6397a127296568cafb6a75ee234f1969c8d14",
+        "blob_sha": "abdd7c99d6c8f1b04e4ed5441639c59e021722bf",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "6_bycatchEstimate/6_1_rasterFE.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/davidruizgarci/PotentialSpawningAreas/blob/3be4052175eaefe4a38796f43fe7beaa5e909101/6_bycatchEstimate/6_1_rasterFE.R"
+        "url": "https://github.com/davidruizgarci/PotentialSpawningAreas/blob/f433f5231fd52b7a208c47d51303065e93200c95/6_bycatchEstimate/6_1_rasterFE.R"
       }
     ],
     "id": "github:davidruizgarci/potentialspawningareas",
@@ -278,34 +278,34 @@
         "path": "R/get_gfw.R",
         "source": "GitHub",
         "type": "package_url",
-        "url": "https://github.com/emlab-ucsb/oceandatr/blob/a4839b9d4a39f74ad8a7b0f2c233964102a4ed2b/R/get_gfw.R"
+        "url": "https://github.com/emlab-ucsb/oceandatr/blob/05e4e8a94fd9588b7943266fda7e015284a54bff/R/get_gfw.R"
       },
       {
-        "blob_sha": "21589feee4471c2194efdfbfe9e3f647b1fd5274",
+        "blob_sha": "54822a4144d66251fdefd81f4809ab16cff68c65",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "man/get_gfw.Rd",
         "source": "GitHub",
         "type": "package_url",
-        "url": "https://github.com/emlab-ucsb/oceandatr/blob/a4839b9d4a39f74ad8a7b0f2c233964102a4ed2b/man/get_gfw.Rd"
+        "url": "https://github.com/emlab-ucsb/oceandatr/blob/05e4e8a94fd9588b7943266fda7e015284a54bff/man/get_gfw.Rd"
       },
       {
-        "blob_sha": "d2d819214da553a830020feed361e4e9a569333e",
+        "blob_sha": "6fdf48a70d29108611402259414d56328213b6b5",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "vignettes/usage_prioritization.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/emlab-ucsb/oceandatr/blob/a4839b9d4a39f74ad8a7b0f2c233964102a4ed2b/vignettes/usage_prioritization.Rmd"
+        "url": "https://github.com/emlab-ucsb/oceandatr/blob/05e4e8a94fd9588b7943266fda7e015284a54bff/vignettes/usage_prioritization.Rmd"
       },
       {
-        "blob_sha": "d2d819214da553a830020feed361e4e9a569333e",
+        "blob_sha": "6fdf48a70d29108611402259414d56328213b6b5",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "vignettes/usage_prioritization.Rmd",
         "source": "GitHub",
         "type": "package_url",
-        "url": "https://github.com/emlab-ucsb/oceandatr/blob/a4839b9d4a39f74ad8a7b0f2c233964102a4ed2b/vignettes/usage_prioritization.Rmd"
+        "url": "https://github.com/emlab-ucsb/oceandatr/blob/05e4e8a94fd9588b7943266fda7e015284a54bff/vignettes/usage_prioritization.Rmd"
       }
     ],
     "id": "github:emlab-ucsb/oceandatr",
@@ -317,32 +317,13 @@
   {
     "evidence": [
       {
-        "blob_sha": "c58aba2ed0b946e0e6d29b387b835e7e61de30c4",
-        "method": "readme_search_api",
-        "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
-        "observed_at": "2026-10-01",
-        "path": "README.md",
-        "source": "GitHub",
-        "type": "readme_reference",
-        "url": "https://github.com/filippomaria-cassarino/fish_biodiversity_biomass/blob/main/README.md"
-      }
-    ],
-    "id": "github:filippomaria-cassarino/fish_biodiversity_biomass",
-    "name": "filippomaria-cassarino/fish_biodiversity_biomass",
-    "source": "GitHub",
-    "status": "readme_reference",
-    "url": "https://github.com/filippomaria-cassarino/fish_biodiversity_biomass"
-  },
-  {
-    "evidence": [
-      {
         "blob_sha": "6a24edfec9287d6fba5909abbc9cb4cb0d717588",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "R/spatial_files.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/R/spatial_files.R"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/R/spatial_files.R"
       },
       {
         "blob_sha": "4da74e948f2a59bc87821b2b1cce343bfa957140",
@@ -351,7 +332,7 @@
         "path": "prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd",
         "source": "GitHub",
         "type": "package_url",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd"
       },
       {
         "blob_sha": "4da74e948f2a59bc87821b2b1cce343bfa957140",
@@ -360,43 +341,7 @@
         "path": "prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd"
-      },
-      {
-        "blob_sha": "8c0df670f13dc90fc97b43d190aca49fd3f096cc",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "prep/01_download_process_gfw_data/archive/01_download_GFW_mmsi_effort.Rmd",
-        "source": "GitHub",
-        "type": "package_url",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/archive/01_download_GFW_mmsi_effort.Rmd"
-      },
-      {
-        "blob_sha": "8c0df670f13dc90fc97b43d190aca49fd3f096cc",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "prep/01_download_process_gfw_data/archive/01_download_GFW_mmsi_effort.Rmd",
-        "source": "GitHub",
-        "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/archive/01_download_GFW_mmsi_effort.Rmd"
-      },
-      {
-        "blob_sha": "f4d0587450565eb490edaead907b4d4d86fed416",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "prep/01_download_process_gfw_data/archive/01a_download_GFW_fleet_effort.Rmd",
-        "source": "GitHub",
-        "type": "package_url",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/archive/01a_download_GFW_fleet_effort.Rmd"
-      },
-      {
-        "blob_sha": "f4d0587450565eb490edaead907b4d4d86fed416",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "prep/01_download_process_gfw_data/archive/01a_download_GFW_fleet_effort.Rmd",
-        "source": "GitHub",
-        "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/archive/01a_download_GFW_fleet_effort.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/01_download_GFW_v3_mmsi_effort.Rmd"
       },
       {
         "blob_sha": "cae3eefb651a2150ba5fb63bbdf78933012122b9",
@@ -405,7 +350,7 @@
         "path": "prep/01_download_process_gfw_data/03_save_gfw_props_data.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/03_save_gfw_props_data.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/03_save_gfw_props_data.Rmd"
       },
       {
         "blob_sha": "a3d39735bf9970fd4774bc788060922d435b80f6",
@@ -414,7 +359,7 @@
         "path": "prep/01_download_process_gfw_data/04b_aggregate_one_deg.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/04b_aggregate_one_deg.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/04b_aggregate_one_deg.Rmd"
       },
       {
         "blob_sha": "abb01d8841b4ccfcea12254ce664dfd6200f468f",
@@ -423,7 +368,7 @@
         "path": "prep/01_download_process_gfw_data/04a_aggregate_half_deg.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/04a_aggregate_half_deg.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/04a_aggregate_half_deg.Rmd"
       },
       {
         "blob_sha": "98abdb0150d6d3964905a2e25a66142b22a4fb2a",
@@ -432,16 +377,7 @@
         "path": "prep/01_download_process_gfw_data/02_match_gfw_imas_categories.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/02_match_gfw_imas_categories.Rmd"
-      },
-      {
-        "blob_sha": "06d2fca17b02af6800e2647a74839ab44ddd2a5f",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "prep/01_download_process_gfw_data/archive/03_save_props_data.Rmd",
-        "source": "GitHub",
-        "type": "code_reference",
-        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/66e53ebf520fea26d10b1d968902ed883f8a8fa8/prep/01_download_process_gfw_data/archive/03_save_props_data.Rmd"
+        "url": "https://github.com/Global-Fishing-Effort/Industrial_fishing_effort_mapping/blob/e4abb4453b09d20e904b1c06421336f2566bc03f/prep/01_download_process_gfw_data/02_match_gfw_imas_categories.Rmd"
       }
     ],
     "id": "github:global-fishing-effort/industrial_fishing_effort_mapping",
@@ -1062,7 +998,7 @@
         "path": "scripts/gom_fishing_effort.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/jcvdav/EVR_628/blob/7a4947f9534293c5aff224e19fb96188756382d8/scripts/gom_fishing_effort.R"
+        "url": "https://github.com/jcvdav/EVR_628/blob/6f4a788d41980409c9e2ac9b57d4097a1f7dc1d5/scripts/gom_fishing_effort.R"
       }
     ],
     "id": "github:jcvdav/evr_628",
@@ -1243,16 +1179,6 @@
         "source": "GitHub",
         "type": "package_url",
         "url": "https://github.com/LeoUtas/fishingvizr/blob/2babb10a3b849ec2a4bbe87d11e3686a7467215c/R/dataprepfuncs.R"
-      },
-      {
-        "blob_sha": "9d94764bf4bbbe1979f8f45c64eac3c47af32d99",
-        "method": "readme_search_api",
-        "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
-        "observed_at": "2026-10-01",
-        "path": "README.md",
-        "source": "GitHub",
-        "type": "readme_reference",
-        "url": "https://github.com/LeoUtas/fishingvizr/blob/main/README.md"
       }
     ],
     "id": "github:leoutas/fishingvizr",
@@ -1271,16 +1197,6 @@
         "source": "GitHub",
         "type": "code_reference",
         "url": "https://github.com/luishfran/exploring-BrazilianTrawlers/blob/f21bf80167249f68dfa4a1dc56dd3cb5daabbb0d/bra_trawlers.R"
-      },
-      {
-        "blob_sha": "beb6d6f36f0eb9cc62d609d9ba1a971759d32ec3",
-        "method": "readme_search_api",
-        "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
-        "observed_at": "2026-10-01",
-        "path": "README.md",
-        "source": "GitHub",
-        "type": "readme_reference",
-        "url": "https://github.com/luishfran/exploring-BrazilianTrawlers/blob/main/README.md"
       }
     ],
     "id": "github:luishfran/exploring-braziliantrawlers",
@@ -1292,22 +1208,22 @@
   {
     "evidence": [
       {
-        "blob_sha": "39ee2d5ee4e4e9827c2b5b6cafe91b85a0861c4b",
+        "blob_sha": "befb6a226d26fb725845c59bf4ed1b1419f48956",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "tests/testthat/test-gfw.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Marine-Biodiversity-Conservation-Lab/ocean3d/blob/73710e47644d6a0f5f899503ffa409497c1605db/tests/testthat/test-gfw.R"
+        "url": "https://github.com/Marine-Biodiversity-Conservation-Lab/ocean3d/blob/08867fa8405fb6f401af753cfe520c75b500db90/tests/testthat/test-gfw.R"
       },
       {
-        "blob_sha": "86c7ad3ca0d7fcc268646faf709af9e5b44314c0",
+        "blob_sha": "37f3ac2a70a8522fab63cfe82c068698fa584026",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
         "path": "man/gfw_effort_to_raster.Rd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/Marine-Biodiversity-Conservation-Lab/ocean3d/blob/73710e47644d6a0f5f899503ffa409497c1605db/man/gfw_effort_to_raster.Rd"
+        "url": "https://github.com/Marine-Biodiversity-Conservation-Lab/ocean3d/blob/08867fa8405fb6f401af753cfe520c75b500db90/man/gfw_effort_to_raster.Rd"
       }
     ],
     "id": "github:marine-biodiversity-conservation-lab/ocean3d",
@@ -1379,7 +1295,7 @@
         "path": "GFW/old/GFW.r",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/GFW.r"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/GFW.r"
       },
       {
         "blob_sha": "059980ef161fdbdf895da5ba25e73754fed3b301",
@@ -1388,7 +1304,7 @@
         "path": "GFW/GFW_sandbox.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/GFW_sandbox.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/GFW_sandbox.R"
       },
       {
         "blob_sha": "c4e38c2ea4132ce297c66a7f1d2f155ecbc65b3d",
@@ -1397,7 +1313,7 @@
         "path": "GFW/old/GFW_functions.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/GFW_functions.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/GFW_functions.R"
       },
       {
         "blob_sha": "175cb65c04252de43f539e5717cb03720fa01032",
@@ -1406,7 +1322,7 @@
         "path": "GFW/old/Extract_GFW_effort.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort.R"
       },
       {
         "blob_sha": "0869e2d5af8c59e5b9f729971f15e9a4fdb37081",
@@ -1415,7 +1331,7 @@
         "path": "GFW/old/GFW_effort_revised.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/GFW_effort_revised.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/GFW_effort_revised.R"
       },
       {
         "blob_sha": "5f49840089ce592c75a0bb4e5a8f36f4f4c211cb",
@@ -1424,7 +1340,7 @@
         "path": "GFW/old/Extract_GFW_effort_v2.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v2.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v2.R"
       },
       {
         "blob_sha": "55faddcb91e316f90d868705cbd86be08b5c9a8d",
@@ -1433,7 +1349,7 @@
         "path": "GFW/old/GFW_functions old.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/GFW_functions old.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/GFW_functions old.R"
       },
       {
         "blob_sha": "4e0fa07edab8b9514cecbe6574a11ee69af9d8b1",
@@ -1442,7 +1358,7 @@
         "path": "GFW/old/GFW_effort_revised backup.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/GFW_effort_revised backup.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/GFW_effort_revised backup.R"
       },
       {
         "blob_sha": "7d57820e347dae822d1b07a12933ab2eb013b11b",
@@ -1451,7 +1367,7 @@
         "path": "GFW/old/Extract_GFW_effort_v7.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v7.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v7.R"
       },
       {
         "blob_sha": "a5b710eaa6f7310be8eda615f1e652370c7ee4c4",
@@ -1460,7 +1376,7 @@
         "path": "GFW/old/Extract_GFW_effort_v4.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v4.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v4.R"
       },
       {
         "blob_sha": "03244f50fd17616fc585960eb2ab7c4a9e963333",
@@ -1469,7 +1385,7 @@
         "path": "GFW/old/Extract_GFW_effort_v3.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v3.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v3.R"
       },
       {
         "blob_sha": "441d6a1cf854ac96a791dc3f468257fd70dba0b0",
@@ -1478,7 +1394,7 @@
         "path": "GFW/old/Extract_GFW_effort_v6.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v6.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v6.R"
       },
       {
         "blob_sha": "d3fdd5f8e3275b3d0adc85947b4004b14a819495",
@@ -1487,7 +1403,7 @@
         "path": "GFW/old/Extract_GFW_effort_v5.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/martinpastoors/mpff/blob/a7171f963633d371007ffc5bbe414a050f5ad93a/GFW/old/Extract_GFW_effort_v5.R"
+        "url": "https://github.com/martinpastoors/mpff/blob/0085820fe02669d13281909c91d9f9f014b55636/GFW/old/Extract_GFW_effort_v5.R"
       }
     ],
     "id": "github:martinpastoors/mpff",
@@ -1526,6 +1442,24 @@
   {
     "evidence": [
       {
+        "blob_sha": "04414f09d774259e2154f42df4b7832cc8cdd6fc",
+        "method": "code_search_api",
+        "note": "Referencia de código al paquete; no demuestra ejecución.",
+        "path": ".Rhistory",
+        "source": "GitHub",
+        "type": "code_reference",
+        "url": "https://github.com/mcruf/BudgetPlanner/blob/69e67d6e071c099d1a2961b630f60367136901fc/.Rhistory"
+      }
+    ],
+    "id": "github:mcruf/budgetplanner",
+    "name": "mcruf/BudgetPlanner",
+    "source": "GitHub",
+    "status": "code_reference",
+    "url": "https://github.com/mcruf/BudgetPlanner"
+  },
+  {
+    "evidence": [
+      {
         "blob_sha": "00ed890c562c9acd9690df45155373388f1841cc",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
@@ -1550,7 +1484,7 @@
         "path": "FP/v2026/Exploratory_Research/FIS_TeamResearch/effort_exploration_gfw.qmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/OHI-GOC/ohi_goc_prep/blob/14b934d16bb20b313e0e207da3bc411e9096bde3/FP/v2026/Exploratory_Research/FIS_TeamResearch/effort_exploration_gfw.qmd"
+        "url": "https://github.com/OHI-GOC/ohi_goc_prep/blob/af02815425b09cdcf8eafed25e044ac39007f402/FP/v2026/Exploratory_Research/FIS_TeamResearch/effort_exploration_gfw.qmd"
       }
     ],
     "id": "github:ohi-goc/ohi_goc_prep",
@@ -1751,15 +1685,6 @@
   {
     "evidence": [
       {
-        "blob_sha": "a652441818c5ea606d3ea405cc08599c4680246e",
-        "method": "code_search_api",
-        "note": "Referencia de código al paquete; no demuestra ejecución.",
-        "path": "2_enviro/2_3_GFW_download.R",
-        "source": "GitHub",
-        "type": "code_reference",
-        "url": "https://github.com/SpatialMarine/PotentialSpawningAreas/blob/f45ae425b048421ecdd3e2beb421a37d141d6ad5/2_enviro/2_3_GFW_download.R"
-      },
-      {
         "blob_sha": "95b6397a127296568cafb6a75ee234f1969c8d14",
         "method": "code_search_api",
         "note": "Referencia de código al paquete; no demuestra ejecución.",
@@ -1767,6 +1692,15 @@
         "source": "GitHub",
         "type": "code_reference",
         "url": "https://github.com/SpatialMarine/PotentialSpawningAreas/blob/f45ae425b048421ecdd3e2beb421a37d141d6ad5/6_bycatchEstimate/6_1_rasterFE.R"
+      },
+      {
+        "blob_sha": "a652441818c5ea606d3ea405cc08599c4680246e",
+        "method": "code_search_api",
+        "note": "Referencia de código al paquete; no demuestra ejecución.",
+        "path": "2_enviro/2_3_GFW_download.R",
+        "source": "GitHub",
+        "type": "code_reference",
+        "url": "https://github.com/SpatialMarine/PotentialSpawningAreas/blob/f45ae425b048421ecdd3e2beb421a37d141d6ad5/2_enviro/2_3_GFW_download.R"
       }
     ],
     "id": "github:spatialmarine/potentialspawningareas",
@@ -1838,7 +1772,7 @@
         "path": "R/splnr_get_gfw.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/SpatialPlanning/spatialplanr/blob/b255757408317ab17ecbd55b40d2beb3282e7fc0/R/splnr_get_gfw.R"
+        "url": "https://github.com/SpatialPlanning/spatialplanr/blob/26b5ac649ba1a42693e999b46a718be85addb263/R/splnr_get_gfw.R"
       },
       {
         "blob_sha": "f6a5f4d4eca8bb12494ba588c489050282e7edb3",
@@ -1847,7 +1781,7 @@
         "path": "man/splnr_get_gfw.Rd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/SpatialPlanning/spatialplanr/blob/b255757408317ab17ecbd55b40d2beb3282e7fc0/man/splnr_get_gfw.Rd"
+        "url": "https://github.com/SpatialPlanning/spatialplanr/blob/26b5ac649ba1a42693e999b46a718be85addb263/man/splnr_get_gfw.Rd"
       }
     ],
     "id": "github:spatialplanning/spatialplanr",
@@ -1883,7 +1817,7 @@
         "path": "devel/gfwTesting.R",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/TaikiSan21/PAMscapes/blob/b5fb28a10457c66c433d937a2c5b8e21a748c621/devel/gfwTesting.R"
+        "url": "https://github.com/TaikiSan21/PAMscapes/blob/ef48bd5e181cc8c7815c79108f0c43b33db9b5f3/devel/gfwTesting.R"
       },
       {
         "blob_sha": "c55f4fa03ae5613f37c7c5337669edaa3b4f12fc",
@@ -1892,7 +1826,7 @@
         "path": "devel/GFW_AIS_Examples.Rmd",
         "source": "GitHub",
         "type": "code_reference",
-        "url": "https://github.com/TaikiSan21/PAMscapes/blob/b5fb28a10457c66c433d937a2c5b8e21a748c621/devel/GFW_AIS_Examples.Rmd"
+        "url": "https://github.com/TaikiSan21/PAMscapes/blob/ef48bd5e181cc8c7815c79108f0c43b33db9b5f3/devel/GFW_AIS_Examples.Rmd"
       }
     ],
     "id": "github:taikisan21/pamscapes",
@@ -1945,24 +1879,5 @@
     "source": "GitHub",
     "status": "code_reference",
     "url": "https://github.com/ThisgoLopes/gfw_fishing_zee_with_enso"
-  },
-  {
-    "evidence": [
-      {
-        "blob_sha": "32d78a7e37ac09cec0509dc07f76d4838ccb95d2",
-        "method": "readme_search_api",
-        "note": "README público con una referencia al paquete; no demuestra uso o ejecución.",
-        "observed_at": "2026-10-01",
-        "path": "README.md",
-        "source": "GitHub",
-        "type": "readme_reference",
-        "url": "https://github.com/ZHANGZ1YUE/Global_Fishing_Analysis/blob/main/README.md"
-      }
-    ],
-    "id": "github:zhangz1yue/global_fishing_analysis",
-    "name": "ZHANGZ1YUE/Global_Fishing_Analysis",
-    "source": "GitHub",
-    "status": "readme_reference",
-    "url": "https://github.com/ZHANGZ1YUE/Global_Fishing_Analysis"
   }
 ]

@@ -63,6 +63,27 @@
     "year": 2026
   },
   {
+    "authors": "Madalena Mesquitela Pereira Cabral; Carolina S. Marques; Joshua David Stewart; Edgar Mauricio Hoyos-Padilla; J. T. Ketchum",
+    "doi": "10.1007/s00227-026-04970-y",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7223659914"
+      }
+    ],
+    "id": "W7223659914",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Beyond Boundaries—Satellite telemetry reveals regional movements and partial protection of oceanic manta rays (Mobula birostris) in the Mexican Pacific",
+    "url": "https://doi.org/10.1007/s00227-026-04970-y",
+    "year": 2026
+  },
+  {
     "authors": "Manon Ducasse-Allegret; Simon F. Thrush; Ines Bartl",
     "doi": "10.1016/j.ocecoaman.2026.108305",
     "evidence": [
@@ -84,24 +105,24 @@
     "year": 2026
   },
   {
-    "authors": "Tommaso Russo; Maria Silvia Labriola; Antonello Sala",
-    "doi": "10.5281/zenodo.20651409",
+    "authors": "Tommaso Russo; Maria Silvia Labriola; Carmen Ferrà; Anna Nora Tassetti; Luca Marsaglia; Sofia Rinalduzzi; Antonello Sala",
+    "doi": "10.1038/s41597-026-08521-4",
     "evidence": [
       {
         "method": "api",
         "note": "Registro bibliográfico obtenido de OpenAlex.",
         "source": "OpenAlex",
         "type": "discovery",
-        "url": "https://openalex.org/W7164481520"
+        "url": "https://openalex.org/W7223687536"
       }
     ],
-    "id": "W7164481520",
+    "id": "W7223687536",
     "sources": [
       "OpenAlex"
     ],
     "status": "candidate",
-    "title": "DecarbonyT - R script",
-    "url": "https://doi.org/10.5281/zenodo.20651409",
+    "title": "Carbon footprint and energy-related performance indicators of Mediterranean and Black Sea trawl fisheries",
+    "url": "https://doi.org/10.1038/s41597-026-08521-4",
     "year": 2026
   },
   {
@@ -210,6 +231,27 @@
     "status": "candidate",
     "title": "Residency and Space Use of Endangered Smoothhound Sharks ( Mustelus mustelus ) in Relation to Marine Protection and Demersal Longline Fishing Along South Africa's South Coast",
     "url": "https://doi.org/10.1111/fme.70100",
+    "year": 2026
+  },
+  {
+    "authors": "Dawn R. Barlow; Lisa T. Ballance; William L. Kennerley; Rachael A. Orben; Leigh G. Torres",
+    "doi": "10.1002/eap.70327",
+    "evidence": [
+      {
+        "method": "api",
+        "note": "Registro bibliográfico obtenido de OpenAlex.",
+        "source": "OpenAlex",
+        "type": "discovery",
+        "url": "https://openalex.org/W7221143780"
+      }
+    ],
+    "id": "W7221143780",
+    "sources": [
+      "OpenAlex"
+    ],
+    "status": "candidate",
+    "title": "Variable spatial management implications based on different seabird distribution and diversity metrics",
+    "url": "https://doi.org/10.1002/eap.70327",
     "year": 2026
   },
   {
@@ -515,7 +557,7 @@
     "year": 2023
   },
   {
-    "authors": "Sophía Bethzabel Galárraga-Tobar; Ruth Matovelle-Villamar; Jesús Merino Velásquez; Wayky Luy-Navarrete",
+    "authors": "Sophía Bethzabel Galárraga-Tobar; Ruth Matovelle-Villamar; Jesús Merino Velásquez; Wayky Alfredo Luy Navarrete",
     "doi": "10.33386/593dp.2022.4-1.1263",
     "evidence": [
       {

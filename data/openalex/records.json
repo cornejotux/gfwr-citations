@@ -20,16 +20,6 @@
     "evidence": "OpenAlex fulltext.search: gfwr"
   },
   {
-    "id": "W7164481520",
-    "year": 2026,
-    "title": "DecarbonyT - R script",
-    "authors": "Tommaso Russo; Maria Silvia Labriola; Antonello Sala",
-    "doi": "10.5281/zenodo.20651409",
-    "url": "https://doi.org/10.5281/zenodo.20651409",
-    "status": "candidate",
-    "evidence": "OpenAlex fulltext.search: gfwr"
-  },
-  {
     "id": "W7167845424",
     "year": 2026,
     "title": "Desafiando la tragedia de los comunes",
@@ -76,6 +66,36 @@
     "authors": "Jason Flower; Echelle S. Burns; Daniel C. Dunn; Andy Estep; Jason D. Everett; Jeffrey O. Hanson; Sarah E. Lester; Anthony James Richardson",
     "doi": "10.1002/ece3.74211",
     "url": "https://doi.org/10.1002/ece3.74211",
+    "status": "candidate",
+    "evidence": "OpenAlex fulltext.search: gfwr"
+  },
+  {
+    "id": "W7221143780",
+    "year": 2026,
+    "title": "Variable spatial management implications based on different seabird distribution and diversity metrics",
+    "authors": "Dawn R. Barlow; Lisa T. Ballance; William L. Kennerley; Rachael A. Orben; Leigh G. Torres",
+    "doi": "10.1002/eap.70327",
+    "url": "https://doi.org/10.1002/eap.70327",
+    "status": "candidate",
+    "evidence": "OpenAlex fulltext.search: gfwr"
+  },
+  {
+    "id": "W7223659914",
+    "year": 2026,
+    "title": "Beyond Boundaries—Satellite telemetry reveals regional movements and partial protection of oceanic manta rays (Mobula birostris) in the Mexican Pacific",
+    "authors": "Madalena Mesquitela Pereira Cabral; Carolina S. Marques; Joshua David Stewart; Edgar Mauricio Hoyos-Padilla; J. T. Ketchum",
+    "doi": "10.1007/s00227-026-04970-y",
+    "url": "https://doi.org/10.1007/s00227-026-04970-y",
+    "status": "candidate",
+    "evidence": "OpenAlex fulltext.search: gfwr"
+  },
+  {
+    "id": "W7223687536",
+    "year": 2026,
+    "title": "Carbon footprint and energy-related performance indicators of Mediterranean and Black Sea trawl fisheries",
+    "authors": "Tommaso Russo; Maria Silvia Labriola; Carmen Ferrà; Anna Nora Tassetti; Luca Marsaglia; Sofia Rinalduzzi; Antonello Sala",
+    "doi": "10.1038/s41597-026-08521-4",
+    "url": "https://doi.org/10.1038/s41597-026-08521-4",
     "status": "candidate",
     "evidence": "OpenAlex fulltext.search: gfwr"
   },
@@ -183,7 +203,7 @@
     "id": "W4293217510",
     "year": 2022,
     "title": "Análisis Bibliométrico de publicaciones relacionadas con Planificación Estratégica y calidad educativa en el periodo 2000 – 2021",
-    "authors": "Sophía Bethzabel Galárraga-Tobar; Ruth Matovelle-Villamar; Jesús Merino Velásquez; Wayky Luy-Navarrete",
+    "authors": "Sophía Bethzabel Galárraga-Tobar; Ruth Matovelle-Villamar; Jesús Merino Velásquez; Wayky Alfredo Luy Navarrete",
     "doi": "10.33386/593dp.2022.4-1.1263",
     "url": "https://doi.org/10.33386/593dp.2022.4-1.1263",
     "status": "candidate",

@@ -14,6 +14,19 @@
     "year": 2026
   },
   {
+    "authors": "Md. Ayenuddin Haque; Arun Chandra Barman; Sumaiya Akter; Md. Habibullah Siddiki; Takaomi Arai; Norhayati Ngah; M. Belal Hossain",
+    "cites_dois": [
+      "10.1016/j.marpol.2017.01.024"
+    ],
+    "doi": "10.1111/fme.70119",
+    "id": "W7221604636",
+    "source": "OpenAlex",
+    "source_url": "https://openalex.org/W7221604636",
+    "title": "The World's Largest Mangrove Fishery at Risk: Status, Vulnerabilities, and Strategies for Sustainable Management",
+    "url": "https://doi.org/10.1111/fme.70119",
+    "year": 2026
+  },
+  {
     "authors": "Anna E. Windle; Ian T. Carroll; Carina Poulin; Skye Caplan; Jeremy Werdell",
     "cites_dois": [
       "10.5670/oceanog.2025.121"
@@ -144,7 +157,7 @@
     "year": 2026
   },
   {
-    "authors": "Roopali Bhatnagar; Malgorzata Krzywonos; Agnieszka Piekara; Efthymios Altsitsiadis",
+    "authors": "Roopali Bhatnagar; Małgorzata Krzywonos; Agnieszka Piekara; Efthymios Altsitsiadis",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -248,7 +261,7 @@
     "year": 2025
   },
   {
-    "authors": "Kieran J. Murphy; Denisse Fierro‐Arcos; Tyler Weaver Rohr; David B. Green; Camilla Novaglio; Katherine B. Baker; Kelly Ortega‐Cisneros; Tyler D. Eddy; Cheryl Shannon Harrison; Simeon L. Hill; Patrick Eskuche‐Keith; Camila Cataldo‐Mendez; Colleen M. Petrik; Matthew H. Pinkerton; Paul Spence; Ilaria Stollberg; Roshni C. Subramaniam; Rowan Trebilco; Vivitskaia Tulloch; Juliano Palacios‐Abrantes; Sophie Bestley; Daniele Bianchi; Philip W. Boyd; Pearse Buchanan; Andrea Bryndum‐Buchholz; Marta Coll; Stuart Paul Corney; Samik Datta; Jason D. Everett; Romain Forestier; Elizabeth A. Fulton; Vianney Guibourd de Luzinais; Ryan Heneghan; Julia G. Mason; Olivier Maury; Clive R. McMahon; Eugene J. Murphy; Anthony James Richardson; Derek P. Tittensor; Scott Spillias; Jeroen Gerhard Steenbeek; Devi Veytia; Julia L. Blanchard",
+    "authors": "Kieran J. Murphy; Denisse Fierro‐Arcos; Tyler Weaver Rohr; David B. Green; Camilla Novaglio; Katherine B. Baker; Kelly Ortega‐Cisneros; Tyler D. Eddy; Cheryl Shannon Harrison; Simeon L. Hill; Patrick Eskuche‐Keith; Camila Cataldo‐Mendez; Colleen M. Petrik; Matthew H. Pinkerton; Paul Spence; Ilaria Stollberg; Roshni C. Subramaniam; Rowan Trebilco; Vivitskaia Tulloch; Juliano Palacios‐Abrantes; Sophie Bestley; Daniele Bianchi; Philip W. Boyd; Pearse Buchanan; Andrea Bryndum‐Buchholz; Marta Coll M; Stuart Paul Corney; Samik Datta; Jason D. Everett; Romain Forestier; Elizabeth A. Fulton; Benjamin Keith Galton-Fenzi; Vianney Guibourd de Luzinais; Ryan Heneghan; Julia G. Mason; Maury Olivier; Clive R. McMahon; Eugene J. Murphy; Anthony James Richardson; Derek P. Tittensor; Scott Spillias; Jeroen Gerhard Steenbeek; Devi Veytia; Julia L. Blanchard",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -261,7 +274,7 @@
     "year": 2025
   },
   {
-    "authors": "María de los Ángeles Liceaga-Correa; Edgar Javier González; Luis A Rincón-Sandoval; Héctor Hernández-Núñez; Erika Betzabeth Palafox–Juárez; Eduardo Cuevas",
+    "authors": "María de los Ángeles Liceaga-Correa; Edgar J. González; Luis A Rincón-Sandoval; Héctor Hernández-Núñez; Erika Betzabeth Palafox–Juárez; Eduardo Cuevas",
     "cites_dois": [
       "10.5670/oceanog.2025.121"
     ],
@@ -274,7 +287,7 @@
     "year": 2025
   },
   {
-    "authors": "Michael C. Melnychuk; Samantha Lees; Pedro Veiga; Jennifer Rasal; Nicole Baker; Lauren M. Koerner; Daniel J. Hively; Hiroyuki Kurota; Carryn L De Moor; Maite Pons; Pamela M. Mace; Ana M. Parma; Alessandro Mannini; Lorne Richard Little; Jilali Bensbai; Arturo Muñoz Albero; Beth Polidoro; Ernesto Jardim; Ray Hilborn; Catherine Longo",
+    "authors": "Michael C. Melnychuk; Samantha Lees; Pedro Veiga; Jennifer Rasal; Nicole Baker; Lauren M. Koerner; Daniel J. Hively; Hiroyuki Kurota; Carryn L De Moor; Maite Pons; Pamela M. Mace; Ana M. Parma; Alessandro Mannini; Lorne Richard Little; Jilali Bensbai; Arturo Muñoz Albero; Beth Polidoro; Ernesto Jardim; Ray W. Hilborn; Catherine Longo",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -521,7 +534,7 @@
     "year": 2023
   },
   {
-    "authors": "Andrés Miguel Cisneros-Montemayor; Eréndira Aceves‐Bueno; Sergio Amezcua-Castro; Alejandra Apolinar‐Romo; Frida Cisneros Soberanis; Gabriela Alejandra Cuevas‐Gómez; Ingrid C. Cruz‐León; Javier De La Cruz‐González; Alejandro Espinoza‐Tenorio; Alejandro García‐Lozano; Pedro C. González‐Espinosa; Miguel Ángel Cisneros‐Mata",
+    "authors": "Andrés Miguel Cisneros-Montemayor; Eréndira Aceves‐Bueno; Sergio Amezcua-Castro; Alejandra Apolinar‐Romo; Frida Cisneros Soberanis; Gabriela Alejandra Cuevas‐Gómez; Ingrid C. Cruz‐León; Javier De La Cruz‐González; Alejandro Espinoza‐Tenorio; Alejandro J. Garcia Lozano; Pedro C. González‐Espinosa; Miguel Ángel Cisneros‐Mata",
     "cites_dois": [
       "10.1002/eap.2022"
     ],
@@ -547,7 +560,7 @@
     "year": 2023
   },
   {
-    "authors": "Mark Swilling; Mary Ruckelshaus; Tanya Brodie Rudolph; Edward H. Allison; Stefan Gelcich; Philile Mbatha; Henrik Österblom",
+    "authors": "Mark Swilling; Mary H. Ruckelshaus; Tanya Brodie Rudolph; Edward H. Allison; Stefan Gelcich; Philile Mbatha; Henrik Österblom",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -573,7 +586,7 @@
     "year": 2023
   },
   {
-    "authors": "Eréndira Aceves‐Bueno; Mateja Nenadović; India C Dove; Claire Atkins-Davis; Juan-Salvador Aceves-Bueno; Abel Trejo‐Ramírez; Cristina Rivas-Ochoa; Salvador Rodríguez-Van Dyck; Amy Hudson Weaver",
+    "authors": "Eréndira Aceves‐Bueno; Mateja Nenadović; India C Dove; Claire Atkins-Davis; Juan-Salvador Aceves-Bueno; Abel Trejo‐Ramírez; Cristina Rivas-Ochoa; Salvador Rodríguez Van Dyck; Amy Hudson Weaver",
     "cites_dois": [
       "10.1002/eap.2022",
       "10.1016/j.marpol.2017.01.024"
@@ -679,7 +692,7 @@
     "year": 2023
   },
   {
-    "authors": "Andy Steven; Kwasi Appeaning Addo; Ghislaine Llewellyn; Vu Thanh Ca; Isaac Boateng; Rodrigo Bustamante; Christopher Doropoulos; Chris Gillies; Mark Hemer; Priscila Lopes; James Kairo; Munsur Rahman; Lalao Aigrette Ravaoarinorotsihoarana; Megan Saunders; U. Rashid Sumaila; Frida Sidik; Louise Teh; Mat Vanderklift; Maria Vozzo",
+    "authors": "Andy Steven; Kwasi Appeaning Addo; Ghislaine Llewellyn; Vu Thanh Ca; Isaac Boateng; Rodrigo Bustamante; Christopher Doropoulos; Chris Gillies; Mark Hemer; Priscila Lopes; James Kairo; Munsur Rahman; Lalao Aigrette Ravaoarinorotsihoarana; Megan I. Saunders; U. Rashid Sumaila; Frida Sidik; Louise Teh; Mat Vanderklift; Maria Vozzo",
     "cites_dois": [
       "10.1002/eap.2022"
     ],
@@ -692,7 +705,7 @@
     "year": 2023
   },
   {
-    "authors": "Anisa Mitra; Fagr Kh. Abdel‐Gawad; Samah M. Bassem; Prabal D. Barua; Loredana Assisi; Costantino Parisi; Tarek Ahmed Temraz; Rubina Vangone; Kimia Kajbaf; Vikas Kumar; Giulia Guerriero",
+    "authors": "Anisa Mitra; Fagr Kh. Abdel‐Gawad; Samah M. Bassem; Prabal Barua; Loredana Assisi; Costantino Parisi; Tarek Ahmed Temraz; Rubina Vangone; Kimia Kajbaf; Vikas Kumar; Giulia Guerriero",
     "cites_dois": [
       "10.1371/journal.pone.0186309"
     ],
@@ -1031,7 +1044,7 @@
     "year": 2022
   },
   {
-    "authors": "Rita Nolasco; Jesús Dubert; José Luis Acuña; Alba Aguión; Teresa Cruz; JN Fernandes; KJ Geiger; David Jacinto; Gonzalo Macho; David Mateus; Antonella Rivera; Salvador Román; Éric Thiébaut; Elsa Vázquez; Henrique Queiroga",
+    "authors": "Rita Nolasco; Jesús Dubert; José Luis Acuña; Alba Aguión; Teresa Cruz; JN Fernandes; Katja Geiger; David Jacinto; Gonzalo Macho; David Mateus; Antonella Rivera; Salvador Román; Éric Thiébaut; Elsa Vázquez; Henrique Queiroga",
     "cites_dois": [
       "10.1016/j.marpol.2017.01.024"
     ],
@@ -1135,7 +1148,7 @@
     "year": 2021
   },
   {
-    "authors": "Juan Francisco Sanchez; Amber Himes‐Cornell; Kathryn H. Dalton; Rebecca Metzner",
+    "authors": "Juan Francisco Lechuga Sánchez; Amber Himes‐Cornell; Kathryn H. Dalton; Rebecca Metzner",
     "cites_dois": [
       "10.1002/eap.2022"
     ],
@@ -1161,29 +1174,16 @@
     "year": 2021
   },
   {
-    "authors": "Julia Bronnmann; Max Thilo Stoeven; Martin F. Quaas; Frank Asche",
+    "authors": "Julia Bronnmann; Max T. Stoeven; Martin F. Quaas; Frank Asche",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
     "doi": "10.3368/le.97.3.641",
-    "id": "W4393182328",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W4393182328",
-    "title": "Measuring Motivations for Choosing Ecolabeled Seafood: Environmental Concerns and Warm Glow",
-    "url": "https://doi.org/10.3368/le.97.3.641",
-    "year": 2021
-  },
-  {
-    "authors": "Julia Bronnmann; Max Thilo Stoeven; Martin F. Quaas; Frank Asche",
-    "cites_dois": [
-      "10.1371/journal.pone.0043765"
-    ],
-    "doi": "10.3368/wple.97.3.101119-0147r",
     "id": "W3198645161",
     "source": "OpenAlex",
     "source_url": "https://openalex.org/W3198645161",
     "title": "Measuring Motivations for Choosing Ecolabeled Seafood: Environmental Concerns and Warm Glow",
-    "url": "https://doi.org/10.3368/wple.97.3.101119-0147r",
+    "url": "https://doi.org/10.3368/le.97.3.641",
     "year": 2021
   },
   {
@@ -1239,7 +1239,7 @@
     "year": 2021
   },
   {
-    "authors": "U. Rashid Sumaila; Melissa Walsh; Kelly Hoareau; Anthony Cox; Louise S. L. Teh; Patrízia Raggi Abdallah; Wisdom Akpalu; Zuzy Anna; Dominique Benzaken; Beatrice Crona; Timothy P. Fitzgerald; Louise Heaps; Ibrahim Issifu; Katia Karousakis; Glenn‐Marie Lange; Amanda Leland; Dana D. Miller; Karen Sack; Durreen Shahnaz; Torsten Thiele; Niels K. Vestergaard; Nobuyuki Yagi; Junjie Zhang",
+    "authors": "U. Rashid Sumaila; Melissa Walsh; Kelly Hoareau; Anthony Cox; Louise S. L. Teh; Patrízia Raggi Abdallah; Wisdom Akpalu; Zuzy Anna; Dominique Benzaken; Beatrice Crona; Timothy P. Fitzgerald; Louise Heaps; Ibrahim Issifu; Katia Karousakis; Glenn‐Marie Lange; Amanda V. Leland; Dana D. Miller; Karen Sack; Durreen Shahnaz; Torsten Thiele; Niels K. Vestergaard; Nobuyuki Yagi; Junjie Zhang",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -1266,7 +1266,7 @@
     "year": 2021
   },
   {
-    "authors": "Jessica A. Gephart; Patrik J. G. Henriksson; Robert W. R. Parker; Alon Shepon; Kelvin D. Gorospe; Kristina Bergman; Gidon Eshel; Christopher De Weir Golden; Benjamin S. Halpern; Sara Hornborg; Malin Jonell; Marc Métian; Kathleen Mifflin; Richard W Newton; Peter H. Tyedmers; Wenbo Zhang; Friederike Ziegler; Max Fredrik Troell",
+    "authors": "Jessica A. Gephart; Patrik J. G. Henriksson; Robert W. R. Parker; Alon Shepon; Kelvin D. Gorospe; Kristina Bergman; Gidon Eshel; Christopher De Weir Golden; Benjamin S. Halpern; Sara Hornborg; Malin Jonell; Marc Métian; Kathleen Mifflin; Richard Newton; Peter H. Tyedmers; Wenbo Zhang; Friederike Ziegler; Max Fredrik Troell",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -1410,19 +1410,6 @@
     "year": 2020
   },
   {
-    "authors": "Bianca Haas; Mary Mackay; Camilla Novaglio; Liam Fullbrook; Michael Murunga; Carla Sbrocchi; Jan McDonald; Phillipa C. McCormack; Karen A. Alexander; Maree Fudge; Lynda Goldsworthy; Fabio Boschetti; Ian M. Dutton; Leo X.C. Dutra; Jeffrey McGee; Yannick Rousseau; Erica A. Spain; Robert L. Stephenson; Joanna Vince; Chris Wilcox; Marcus Haward",
-    "cites_dois": [
-      "10.1371/journal.pone.0043765"
-    ],
-    "doi": "10.22541/au.160193487.70124607/v1",
-    "id": "W3213182256",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W3213182256",
-    "title": "The future of ocean governance",
-    "url": "https://doi.org/10.22541/au.160193487.70124607/v1",
-    "year": 2020
-  },
-  {
     "authors": "Juliet M. Wong; Gretchen E. Hofmann",
     "cites_dois": [
       "10.1016/j.biocon.2017.03.014"
@@ -1554,7 +1541,7 @@
     "year": 2020
   },
   {
-    "authors": "Yao Song; Zhenzhen Qin; Zi‐Hao Qin; Zi‐Hao Qin; Zi‐Hao Qin",
+    "authors": "Yao Song; Zhenzhen Qin; Zi‐Hao Qin",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -1653,7 +1640,7 @@
     "id": "W3093274793",
     "source": "OpenAlex",
     "source_url": "https://openalex.org/W3093274793",
-    "title": "Crop residues may be a key feedstock to bioeconomy but how reliable are current estimation methods?",
+    "title": "Crop residues are a key feedstock to bioeconomy but available methods for their estimation are highly uncertain",
     "url": "https://doi.org/10.1016/j.resconrec.2020.105211",
     "year": 2020
   },
@@ -1853,7 +1840,7 @@
     "year": 2019
   },
   {
-    "authors": "María Vernet; Walter Geibert; Mario Hoppema; Peter J. Brown; Christian Haas; Hartmut H. Hellmer; Wilfried Jokat; Loïc Jullion; Matthew R. Mazloff; Dorothée C. E. Bakker; J. Alexander Brearley; Peter Leslie Croot; Tore Hattermann; Judith Hauck; Claus‐Dieter Hillenbrand; Clara J. M. Hoppe; Oliver Huhn; Boris Peter Koch; Oliver Jens Lechtenfeld; Michael P. Meredith; Alberto C. Naveira Garabato; Eva‐Maria Nöthig; Ilka Peeken; Michiel M Rutgers van der Loeff; Sunke Schmidtko; M. Schröder; Volker H. Strass; Sinhué Torres‐Valdés; Ariane Verdy",
+    "authors": "María Vernet; Walter Geibert; Mario Hoppema; Peter J. Brown; Christian Haas; Hartmut H. Hellmer; Wilfried Jokat; Loïc Jullion; Matthew R. Mazloff; Dorothée C. E. Bakker; J. Alexander Brearley; Peter Leslie Croot; Tore Hattermann; Judith Hauck; Claus‐Dieter Hillenbrand; Clara J. M. Hoppe; Oliver Huhn; Boris Peter Koch; Oliver Jens Lechtenfeld; Michael P. Meredith; Alberto C. Naveira Garabato; Eva‐Maria Nöthig; Ilka Peeken; Michiel M Rutgers van der Loeff; Sunke Schmidtko; Michael Schröder; Volker H. Strass; Sinhué Torres‐Valdés; Ariane Verdy",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -1866,7 +1853,7 @@
     "year": 2019
   },
   {
-    "authors": "Lorena Couce‐Montero; Villy Christensen; Alberto Bilbao Sieyro; Yeray Pérez González; David Jiménez‐Alvarado; José J. Castro",
+    "authors": "Lorena Couce‐Montero; Villy Christensen A; Alberto Bilbao-Sieyro; Yeray Pérez González; David Jiménez‐Alvarado; José J. Castro",
     "cites_dois": [
       "10.1016/j.marpol.2017.01.024"
     ],
@@ -1996,7 +1983,7 @@
     "year": 2019
   },
   {
-    "authors": "David R. Bryan; MW Feeley; RS Nemeth; C Pollock; Jerald S. Ault",
+    "authors": "David R. Bryan; Michael W. Feeley; RS Nemeth; C Pollock; Jerald S. Ault",
     "cites_dois": [
       "10.1371/journal.pone.0186309"
     ],
@@ -2022,7 +2009,7 @@
     "year": 2019
   },
   {
-    "authors": "V. P. Demkin; S. V. Melnichuk; P. P. Shchetinin; Herman Kingma; Raymond van de Berg",
+    "authors": "Демкин Владимир Петрович; S. V. Melnichuk; P. P. Shchetinin; Herman Kingma; Raymond van de Berg",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -2074,7 +2061,7 @@
     "year": 2019
   },
   {
-    "authors": "Nicolás L. Gutiérrez; Sarah R. Valencia; Trevor A. Branch; David J. Agnew; Julia K. Baum; Patricia L. Bianchi; Jorge Cornejo‐Donoso; Christopher Costello; Omar Defeo; Timothy E. Essington; Ray Hilborn; Daniel D. Hoggarth; Ashley Larsen; Chris Ninnes; Keith J. Sainsbury; Rebecca L. Selden; Seeta A. Sistla; Anthony D. M. Smith; Amanda Stern-Pirlot; Sarah J. Teck; James T. Thorson; Nicholas E. Williams; and the PLOS ONE Editors",
+    "authors": "Nicolás L. Gutiérrez; Sarah R. Valencia; Trevor A. Branch; David J. Agnew; Julia K. Baum; Patricia L. Bianchi; Jorge Cornejo‐Donoso; Christopher Costello; Omar Defeo; Timothy E. Essington; Ray W. Hilborn; Daniel D. Hoggarth; Ashley Larsen; Chris Ninnes; Keith J. Sainsbury; Rebecca L. Selden; Seeta A. Sistla; Anthony D. M. Smith; Amanda Stern-Pirlot; Sarah J. Teck; James T. Thorson; Nicholas E. Williams; and the PLOS ONE Editors",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -2149,19 +2136,6 @@
     "source_url": "https://openalex.org/W2969959314",
     "title": "An interdisciplinary evaluation of community-based TURF-reserves",
     "url": "https://doi.org/10.1371/journal.pone.0221660",
-    "year": 2019
-  },
-  {
-    "authors": "Juan Carlos Villaseñor‐Derbez",
-    "cites_dois": [
-      "10.1016/j.marpol.2017.01.024"
-    ],
-    "doi": "10.31230/osf.io/8vgqu",
-    "id": "W4236762994",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W4236762994",
-    "title": "An interdisciplinary evaluation of community-based TURF-reserves",
-    "url": "https://doi.org/10.31230/osf.io/8vgqu",
     "year": 2019
   },
   {
@@ -2253,6 +2227,19 @@
     "source_url": "https://openalex.org/W2847105607",
     "title": "The Biology of Seamounts: 25 Years on",
     "url": "https://doi.org/10.1016/bs.amb.2018.06.001",
+    "year": 2018
+  },
+  {
+    "authors": "Werner Souza Martins",
+    "cites_dois": [
+      "10.1371/journal.pone.0043765"
+    ],
+    "doi": "10.11606/t.10.2018.tde-26062019-153914",
+    "id": "W3044160567",
+    "source": "OpenAlex",
+    "source_url": "https://openalex.org/W3044160567",
+    "title": "Technical recommendations for seafood supply to the Brazilian Army in the State of São Paulo",
+    "url": "https://doi.org/10.11606/t.10.2018.tde-26062019-153914",
     "year": 2018
   },
   {
@@ -2370,19 +2357,6 @@
     "source_url": "https://openalex.org/W2805057110",
     "title": "Generic names and mislabeling conceal high species diversity in global fisheries markets",
     "url": "https://doi.org/10.1111/conl.12573",
-    "year": 2018
-  },
-  {
-    "authors": "Yorgos Stratoudakis; Patrick McConney; John Duncan; Abdul Ghofar; Nancy Gitonga; Kolliyil Sunil Mohamed; Melita Samoilys; Keith Symington; Luis Bourillón",
-    "cites_dois": [
-      "10.1371/journal.pone.0043765"
-    ],
-    "doi": "10.31230/osf.io/e7pd8",
-    "id": "W4246767817",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W4246767817",
-    "title": "Fisheries certification in the developing world: Locks and keys or square pegs in round holes?",
-    "url": "https://doi.org/10.31230/osf.io/e7pd8",
     "year": 2018
   },
   {
@@ -2516,19 +2490,6 @@
     "year": 2018
   },
   {
-    "authors": "Werner Souza Martins",
-    "cites_dois": [
-      "10.1371/journal.pone.0043765"
-    ],
-    "doi": "10.11606/t.10.2018.tde-26062019-153914",
-    "id": "W3044160567",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W3044160567",
-    "title": ">b /b<",
-    "url": "https://doi.org/10.11606/t.10.2018.tde-26062019-153914",
-    "year": 2018
-  },
-  {
     "authors": "Charles Z. Levkoe; Kristen N. Lowitt; Connie Nelson",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
@@ -2659,7 +2620,7 @@
     "year": 2017
   },
   {
-    "authors": "Nicolás L. Gutiérrez; Peter Halmay; Ray Hilborn; André Eric Punt; Stephen C. Schroeter",
+    "authors": "Nicolás L. Gutiérrez; Peter Halmay; Ray W. Hilborn; André Eric Punt; Stephen C. Schroeter",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -2685,7 +2646,7 @@
     "year": 2017
   },
   {
-    "authors": "Mathieu Colléter; Audrey Valls; Jérôme Guitton; Lyne G. Morissette; Francisco Arreguı́n-Sánchez; Villy Christensen; Didier Gascuel; Daniel F Pauly",
+    "authors": "Mathieu Colléter; Audrey Valls; Jérôme Guitton; Lyne G. Morissette; Francisco Arreguı́n-Sánchez; Villy Christensen A; Didier Gascuel; Daniel F Pauly",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -2711,7 +2672,7 @@
     "year": 2017
   },
   {
-    "authors": "Louise S. L. Teh; William W. L. Cheung; Villy Christensen; UR Sumaila",
+    "authors": "Louise S. L. Teh; William W. L. Cheung; Villy Christensen A; UR Sumaila",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -2748,19 +2709,6 @@
     "title": "A Review of the Papua New Guinea Marine Aquarium Fishery",
     "url": "https://doi.org/10.25903/hzgj-qm75",
     "year": 2017
-  },
-  {
-    "authors": "Jaco Barendse; Dirk J. Roux; Bianca Currie; Natasha Wilson; Christo Fabricius",
-    "cites_dois": [
-      "10.1371/journal.pone.0043765"
-    ],
-    "doi": "10.17159/sajs.2016/20150359",
-    "id": "W2400102787",
-    "source": "OpenAlex",
-    "source_url": "https://openalex.org/W2400102787",
-    "title": "broader view of stewardship to achieve conservation and sustainability goals in South Africa",
-    "url": "https://doi.org/10.17159/sajs.2016/20150359",
-    "year": 2016
   },
   {
     "authors": "Nicolás L. Gutiérrez; Omar Defeo; Simon R. Bush; Doug S Butterworth; Cathy A. Roheim; André Eric Punt",
@@ -2854,7 +2802,7 @@
     "year": 2016
   },
   {
-    "authors": "Johann Hofherr; Jann Th. Martinsohn; Donna‐Mareè Cawthorn; Barbara  A. Rasco; Amanda Madelaine Naaum",
+    "authors": "Johann Hofherr; Jann Th. Martinsohn; Donna‐Mareè Cawthorn; Barbara Rasco; Amanda Madelaine Naaum",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -2984,7 +2932,7 @@
     "year": 2016
   },
   {
-    "authors": "Cristina Lao‐Peregrín; Jesus Javier Ballesteros; Miriam Fernández; Alfonsa Zamora‐Moratalla; Ana Saavedra; María Gómez-Lázaro; Esther Pérez‐Navarro; Deborah Jane Burks; Eduardo Daniel Martín",
+    "authors": "Cristina Lao‐Peregrín; J. J. Ballesteros; Miriam Fernández; Alfonsa Zamora‐Moratalla; Ana Saavedra; María Gómez-Lázaro; Esther Pérez‐Navarro; Deborah Jane Burks; Eduardo Daniel Martín",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -3010,7 +2958,7 @@
     "year": 2016
   },
   {
-    "authors": "L. M. Bellchambers; D.J. Gaughan; Brent S. Wise; G. Jackson; W.J. Fletcher",
+    "authors": "L. M. Bellchambers; D.J. Gaughan; Brent S. Wise; G. Jackson; Warrick J. Fletcher",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -3033,6 +2981,19 @@
     "source_url": "https://openalex.org/W2343604842",
     "title": "A qualitative meta-synthesis of the benefits of eco-labeling in developing countries",
     "url": "https://doi.org/10.1016/j.ecolecon.2016.03.020",
+    "year": 2016
+  },
+  {
+    "authors": "Jaco Barendse; Dirk J. Roux; Bianca Currie; Natasha Wilson; Christo Fabricius",
+    "cites_dois": [
+      "10.1371/journal.pone.0043765"
+    ],
+    "doi": "10.17159/sajs.2016/20150359",
+    "id": "W2400102787",
+    "source": "OpenAlex",
+    "source_url": "https://openalex.org/W2400102787",
+    "title": "A broader view of stewardship to achieve conservation and sustainability goals in South Africa",
+    "url": "https://doi.org/10.17159/sajs.2016/20150359",
     "year": 2016
   },
   {
@@ -3101,7 +3062,7 @@
     "year": 2015
   },
   {
-    "authors": "Malcolm R. Clark; Franziska Althaus; Thomas  Alfred Schlacher; Alan Williams; David A. Bowden; Ashley Alun Rowden",
+    "authors": "Malcolm R. Clark; Franziska Althaus; Thomas A. Schlacher; Alan Williams; David A. Bowden; Ashley Alun Rowden",
     "cites_dois": [
       "10.1111/j.1439-0485.2010.00372.x"
     ],
@@ -3218,7 +3179,7 @@
     "year": 2015
   },
   {
-    "authors": "Lan Ge; Christopher A. Brewster",
+    "authors": "Lan Ge; Christopher Brewster",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -3387,7 +3348,7 @@
     "year": 2015
   },
   {
-    "authors": "Steven J. Cooke; Robert Arlinghaus; D. M. Bartley; T. Douglas Beard; I. G. Cowx; Tim E. Essington; Olaf P. Jensen; Abigail J. Lynch; William W. L. Taylor; Reg A. Watson",
+    "authors": "Steven J. Cooke; Robert Arlinghaus; D. M. Bartley; T. Douglas Beard; I. G. Cowx; Tim Essington; Olaf P. Jensen; Abigail J. Lynch; William W. L. Taylor; Reg A. Watson",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -3413,7 +3374,7 @@
     "year": 2014
   },
   {
-    "authors": "Jock W. Young; Brian P Hunt; Timothée R. Cook; Joel K. Llopiz; Elliott Lee Hazen; Heidi Pethybridge; Daniela M. Ceccarelli; Anne Lorrain; Robert Olson; Valérie Allain; Christophe E. Menkes; Toby A. Patterson; Simon Nicol; Patrick Lehodey; Rudy J. Kloser; Haritz Arrizabalaga; C. Anela Choy",
+    "authors": "Jock W. Young; Brian P. V. Hunt; Timothée R. Cook; Joel K. Llopiz; Elliott Lee Hazen; Heidi Pethybridge; Daniela M. Ceccarelli; Anne Lorrain; Robert J. Olson; Valérie Allain; Christophe Eugène Menkès; Toby A. Patterson; Simon Nicol; Patrick Lehodey; Rudy J. Kloser; Haritz Arrizabalaga; C. Anela Choy",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -3686,7 +3647,7 @@
     "year": 2014
   },
   {
-    "authors": "L. Gurney; Evgeny A. Pakhomov; Villy Christensen",
+    "authors": "L. Gurney; Evgeny A. Pakhomov; Villy Christensen A",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -3738,7 +3699,7 @@
     "year": 2014
   },
   {
-    "authors": "Joan Navarro; Marta Coll; Christopher J. Somes; Robert Olson",
+    "authors": "Joan Navarro; Marta Coll M; Christopher J. Somes; Robert J. Olson",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -3777,7 +3738,7 @@
     "year": 2013
   },
   {
-    "authors": "Héctor J. Pavés; Humberto E. González; Villy Christensen",
+    "authors": "Héctor J. Pavés; Humberto E. González; Villy Christensen A",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -3803,7 +3764,7 @@
     "year": 2013
   },
   {
-    "authors": "Hauke Flores; Brian P. V. Hunt; Svenja Kruse; Evgeny A. Pakhomov; Volker Siegel; J.A. van Franeker; Volker H. Strass; Anton Van de Putte; Erik H. Meesters; Ulrich Bathmann",
+    "authors": "Hauke Flores; Brian P. V. Hunt; Svenja Kruse; Evgeny A. Pakhomov; Volker Siegel; J.A. van Franeker; Volker H. Strass; Anton Van de Putte; Erik H. Meesters; Ulrich V. Bathmann",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -3881,7 +3842,7 @@
     "year": 2013
   },
   {
-    "authors": "Omar Defeo; Mauricio Castrejón; Leonardo E. Ortega; Angela M. Kuhn; Nicolás L. Gutiérrez; Juan Carlos Castilla",
+    "authors": "Omar Defeo; Mauricio Castrejón; Leonardo Ortega; Angela M. Kuhn; Nicolás L. Gutiérrez; Juan Carlos Castilla",
     "cites_dois": [
       "10.1371/journal.pone.0043765"
     ],
@@ -3998,7 +3959,7 @@
     "year": 2012
   },
   {
-    "authors": "Malcolm R. Clark; Thomas  Alfred Schlacher; Ashley Alun Rowden; Karen I. Stocks; Mireille Consalvey",
+    "authors": "Malcolm R. Clark; Thomas A. Schlacher; Ashley Alun Rowden; Karen I. Stocks; Mireille Consalvey",
     "cites_dois": [
       "10.1111/j.1439-0485.2010.00372.x"
     ],
@@ -4050,7 +4011,7 @@
     "year": 2012
   },
   {
-    "authors": "Eugene J. Murphy; Rachel D. Cavanagh; Eileen E. Hofmann; Simeon L. Hill; Andrew John Constable; Daniel Pereira da Costa; Matthew H. Pinkerton; Nadine M. Johnston; Philip N. Trathan; John M. Klinck; Dieter A. Wolf-Gladrow; Kendra L. Daly; Olivier Maury; Scott C. Doney",
+    "authors": "Eugene J. Murphy; Rachel D. Cavanagh; Eileen E. Hofmann; Simeon L. Hill; Andrew John Constable; Daniel Pereira da Costa; Matthew H. Pinkerton; Nadine M. Johnston; Philip N. Trathan; John M. Klinck; Dieter A. Wolf-Gladrow; Kendra L. Daly; Maury Olivier; Scott C. Doney",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -4076,7 +4037,7 @@
     "year": 2012
   },
   {
-    "authors": "Karen I. Stocks; Malcolm R. Clark; Ashley Alun Rowden; Mireille Consalvey; Thomas  Alfred Schlacher",
+    "authors": "Karen I. Stocks; Malcolm R. Clark; Ashley Alun Rowden; Mireille Consalvey; Thomas A. Schlacher",
     "cites_dois": [
       "10.1111/j.1439-0485.2010.00372.x"
     ],
@@ -4089,7 +4050,7 @@
     "year": 2012
   },
   {
-    "authors": "Marta Coll; Joan Navarro; Robert Olson; Villy Christensen",
+    "authors": "Marta Coll M; Joan Navarro; Robert J. Olson; Villy Christensen A",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
@@ -4141,7 +4102,7 @@
     "year": 2010
   },
   {
-    "authors": "Thomas  Alfred Schlacher; Ashley Alun Rowden; John F. Dower; Mireille Consalvey",
+    "authors": "Thomas A. Schlacher; Ashley Alun Rowden; John F. Dower; Mireille Consalvey",
     "cites_dois": [
       "10.1111/j.1439-0485.2010.00372.x"
     ],
@@ -4154,7 +4115,7 @@
     "year": 2010
   },
   {
-    "authors": "Ashley Alun Rowden; John F. Dower; Thomas  Alfred Schlacher; Mireille Consalvey; Malcolm R. Clark",
+    "authors": "Ashley Alun Rowden; John F. Dower; Thomas A. Schlacher; Mireille Consalvey; Malcolm R. Clark",
     "cites_dois": [
       "10.1111/j.1439-0485.2010.00372.x"
     ],
@@ -4180,7 +4141,7 @@
     "year": 2010
   },
   {
-    "authors": "Matthew H. Pinkerton; Janet M. Bradford‐Grieve; S. M. Hanchet",
+    "authors": "Matthew H. Pinkerton; Janet M. Bradford‐Grieve; Stuart M. Hanchet",
     "cites_dois": [
       "10.1016/j.ecolmodel.2008.06.011"
     ],
